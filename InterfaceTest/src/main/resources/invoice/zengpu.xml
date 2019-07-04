@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
+    <body>
+        <input>
+            <fpqqlsh>75520190702160524</fpqqlsh>
+            <jsbh>500102010000096~~29ff13ece4e497b9b50acf67dd92b764</jsbh>
+            <fplxdm>007</fplxdm>
+            <kplx>0</kplx>
+            <yhlx>0</yhlx>
+            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
+            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
+            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
+            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <qdbz>0</qdbz>
+            <fyxm count="1">
+                <group xh="1">
+                    <fphxz>0</fphxz>
+                    <spmc>兰博基尼跑车</spmc>
+                    <spsm/>
+                    <ggxh/>
+                    <dw/>
+                    <spsl>1</spsl>
+                    <dj>13560</dj>
+                    <je>13560</je>
+                    <sl>0.13</sl>
+                    <se>1762.8</se>
+                    <spbm>1090305010800000000</spbm>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs/>
+                    <zzstsgl/>
+                </group>
+            </fyxm>
+            <bz>备注</bz>
+            <skr>收款人</skr>
+            <fhr>复核人</fhr>
+            <kpr>开票人</kpr>
+            <yfpdm/>
+            <yfphm/>
+            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+        </input>
+    </body>
+</business>

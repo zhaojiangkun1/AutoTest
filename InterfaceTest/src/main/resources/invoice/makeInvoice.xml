@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
+    <body>
+        <input>
+            <fpqqlsh>31120190703111002</fpqqlsh>
+            <shnsrsbh>110101201707010057</shnsrsbh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fplxdm>026</fplxdm>
+            <kplx>0</kplx>
+            <yhlx>0</yhlx>
+            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
+            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
+            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
+            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <fyxm count="1">
+                <group xh="1">
+                    <fphxz>0</fphxz>
+                    <spmc>代收民航发展基金</spmc>
+                    <ggxh/>
+                    <dw/>
+                    <spsl>1</spsl>
+                    <dj>86</dj>
+                    <je>86</je>
+                    <sl>0</sl>
+                    <se>0</se>
+                    <spbm>6130000000000000000</spbm>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs>3</lslbs>
+                    <zzstsgl/>
+                </group>
+            </fyxm>
+            <bz>beizhu</bz>
+            <skr>朱先生</skr>
+            <fhr>陈先生</fhr>
+            <kpr>赵先生</kpr>
+            <yfpdm/>
+            <yfphm/>
+            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+        </input>
+    </body>
+</business>

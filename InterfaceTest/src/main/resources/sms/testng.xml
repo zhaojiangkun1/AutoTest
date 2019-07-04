@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "测试发短信">
+
+    <test name = "sendSms" >
+        <groups>
+            <run>
+                <include name = "发短信"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.shuzutech.sms.SendSms"/>
+        </classes>
+
+    </test>
+
+</suite>

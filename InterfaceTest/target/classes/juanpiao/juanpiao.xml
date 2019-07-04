@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<business id="FPKJ">
+    <body>
+        <input>
+            <fpqqlsh>ZBJ00000000000005</fpqqlsh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fplxdm>025</fplxdm>
+            <kplx>0</kplx>
+            <yhlx>0</yhlx>
+            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
+            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
+            <fyxm count="1">
+                <group xh="1">
+                    <fphxz>0</fphxz>
+                    <spmc>餐饮费用</spmc>
+                    <spsl>1</spsl>
+                    <hsdj>3</hsdj>
+                    <hsje>3</hsje>
+                    <sl>0.09</sl>
+                    <se>0.25</se>
+                    <spbm>3070401000000000000</spbm>
+                    <zxbm></zxbm>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs></lslbs>
+                    <zzstsgl></zzstsgl>
+                </group>
+            </fyxm>
+            <bz>备注</bz>
+            <skr>收款人</skr>
+            <kpr>开票人</kpr>
+            <yfpdm></yfpdm>
+            <yfphm></yfphm>
+            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+        </input>
+    </body>
+</business>

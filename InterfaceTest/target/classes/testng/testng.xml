@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "开票接口测试，包含多个开票场景">
+    <test name = "正数开票，包含一些异常场景">
+        <groups>
+            <run>
+                <include name="异常开票"/>
+                <include name = "正常税率开票"/>
+                <include name="卷票"/>
+                <include name="普票"/>
+                <include name="专票"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.shuzutech.invoice.MakeInvoiceScenario"/>
+        </classes>
+
+    </test>
+    <listeners>
+        <listener class-name = "com.shuzutech.invoice.ExtentTestNGIReporterListener"/>
+        <listener class-name = "com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+
+</suite>

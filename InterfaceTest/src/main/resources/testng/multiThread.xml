@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "thread" parallel = "methods" thread-count = "3">
+    <!--
+    thread-count 表示线程数
+    当前测试规划执行中，为每个测试用例的执行使用单独的线程，最多并发3个线程
+    1.tests级别:不同的test tag下的用例可以在不同的线程下执行
+                相同的test tag下的用例只能在同一个线程中去执行
+    2.classes级别:相同的class tag下的用例在同一个线程中执行
+                  不同的class tag下的用例可以在不同的线程中执行
+    3.methods级别:所有用例都可以在不同的线程下执行
+    -->
+    <test name = "invoice">
+        <groups>
+            <run>
+                <include name="正常税率开票"/>
+                <include name="卷票"/>
+                <include name="普票"/>
+                <include name="专票"/>
+                <include name="异常开票"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.shuzutech.invoice.MakeInvoiceScenario"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name = "com.shuzutech.invoice.ExtentTestNGIReporterListener"/>
+        <listener class-name = "com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+</suite>
