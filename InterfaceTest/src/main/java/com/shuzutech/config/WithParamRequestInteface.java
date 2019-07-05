@@ -1,6 +1,5 @@
 package com.shuzutech.config;
 
-
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -16,28 +15,23 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
-import java.io.*;
+import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
-import java.util.ResourceBundle;
 
-public class RequestInterface {
+public class WithParamRequestInteface {
 
     String APPID = "f07dcd92fce254d4b344cb07dc4901e2";//测试环境的appid
-//    String APPID = "253478c77363a9156e3e633bcb76dc1e";//正式环境的appid
-
-    String url = new GetBundleResource().getBundleResource(); //开票的url
-//    String url = new GetBundleResource().getBundleResource1();//臻票云抬头联想
+//  String APPID = "253478c77363a9156e3e633bcb76dc1e";//正式环境的appid
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     String date = simpleDateFormat.format(new Date());
     String access_token;
     String body;
 
-    public void requestInterface(String file) throws IOException, NoSuchAlgorithmException, ParseException, ParserConfigurationException, TransformerException, SAXException {
+    public void requestInterface(String url,String file) throws IOException, NoSuchAlgorithmException, ParseException, ParserConfigurationException, TransformerException, SAXException {
         body = ReadFile.readFile(file);
         getToken();
         System.out.println("本次请求的accessToken:"+access_token);
@@ -91,4 +85,5 @@ public class RequestInterface {
             access_token = getAccessToken.item(0).getTextContent();
         }
     }
+
 }
