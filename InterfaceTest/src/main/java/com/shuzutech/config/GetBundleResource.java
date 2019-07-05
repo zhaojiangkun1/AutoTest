@@ -13,5 +13,4 @@ public class GetBundleResource {
         return url;
     }
 
-
 }
