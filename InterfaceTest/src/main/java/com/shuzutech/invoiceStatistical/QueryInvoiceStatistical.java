@@ -32,25 +32,25 @@ public class QueryInvoiceStatistical {
      */
     //统计电子票开票统计
     @Test(groups = {"统计电子票"})
-    public void statisicalEleInvoice() throws IOException, NoSuchAlgorithmException, TransformerException, SAXException, ParserConfigurationException, ParseException {
+    public void statisicalEleInvoice() throws Exception {
         UpdateFplxdm(file,"026");
         new RequestInterface().requestInterface(file);
     }
     //查找专票统计
     @Test(groups = {"统计专票"})
-    public void statisicalZhuanInvoice() throws ParserConfigurationException, TransformerException, SAXException, IOException, NoSuchAlgorithmException, ParseException {
+    public void statisicalZhuanInvoice() throws Exception{
         UpdateFplxdm(file,"004");
         new RequestInterface().requestInterface(file);
     }
 
     @Test(groups = {"统计卷票"})
-    public void statisicalJuanInvoice() throws IOException, NoSuchAlgorithmException, TransformerException, SAXException, ParserConfigurationException, ParseException {
+    public void statisicalJuanInvoice() throws Exception {
         UpdateFplxdm(file,"025");
         new RequestInterface().requestInterface(file);
     }
 
     @Test(groups = {"统计普票"})
-    public void statisicalPuInvoice() throws IOException, NoSuchAlgorithmException, TransformerException, SAXException, ParserConfigurationException, ParseException {
+    public void statisicalPuInvoice() throws Exception {
         UpdateFplxdm(file,"007");
         new RequestInterface().requestInterface(file);
     }
