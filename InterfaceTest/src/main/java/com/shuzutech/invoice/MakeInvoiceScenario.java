@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 public class MakeInvoiceScenario {
 
-    String newShnsrsbh="110101201707010057";
-    String newJsbh = "110101201707010057~~499000152456";
+    String newShnsrsbh="500102010001459";
+    String newJsbh = "500102010001459~~499000115698";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;

@@ -31,14 +31,14 @@ import java.util.Date;
 
 public class SmsInterface {
 
-    String appId = "253478c77363a9156e3e633bcb76dc1e";
+    String appId = "66c9cf9051f23b55bdb3b5734caa4830";
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        String url = "http://106.14.193.154:9085/sms-test/sms/sendSms";  //测试环境
-    String url = "http://sms.shuzutech.com:8080/sms-center/sms/sendSms";  //生产环境
+        String url = "http://106.14.193.154:9085/sms-test/sms/sendSms";  //测试环境
+//    String url = "http://sms.shuzutech.com:8080/sms-center/sms/sendSms";  //生产环境
 //    String url = "http://106.14.13.223:8080/sms-center/sms/sendSms";
-//        String uri = "http://106.14.193.154:9085/sms-test/sms/getSmsResult";//短消息推送结果查询，测试环境
+        String uri = "http://106.14.193.154:9085/sms-test/sms/getSmsResult";//短消息推送结果查询，测试环境
 //    String uri = "http://106.14.13.223:8080/sms-center/sms/getSmsResult";
-    String uri = "http://sms.shuzutech.com:8080/sms-center/sms/getSmsResult";
+//    String uri = "http://sms.shuzutech.com:8080/sms-center/sms/getSmsResult";
     String date = simpleDateFormat.format(new Date());
     String accessToken;
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\sms\\";

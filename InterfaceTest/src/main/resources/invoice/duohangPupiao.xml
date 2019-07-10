@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>10020190702172533</fpqqlsh>
-            <jsbh>500102010000097~~e3ed54a6f58dc72c21577077793b8bc8</jsbh>
+            <fpqqlsh>16120190710115731</fpqqlsh>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -10,8 +10,8 @@
             <ghdwmc>南京数族信息科技有限公司</ghdwmc>
             <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
             <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
-            <qdbz>0</qdbz>
-            <fyxm count="8">
+            <qdbz>1</qdbz>
+            <fyxm count="10">
                 <group xh="1">
                     <fphxz>0</fphxz>
                     <spmc>兰博基尼跑车</spmc>
@@ -142,6 +142,40 @@
                     <je>9.36</je>
                     <sl>0.13</sl>
                     <se>1.22</se>
+                    <spbm>1010102020000000000</spbm>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs/>
+                    <zzstsgl/>
+                </group>
+                <group xh="9">
+                    <fphxz>2</fphxz>
+                    <spmc>木薯干</spmc>
+                    <spsm/>
+                    <ggxh/>
+                    <dw/>
+                    <spsl>3.12</spsl>
+                    <dj>3</dj>
+                    <je>9.36</je>
+                    <sl>0.13</sl>
+                    <se>1.22</se>
+                    <spbm>1010102020000000000</spbm>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs/>
+                    <zzstsgl/>
+                </group>
+                <group xh="10">
+                    <fphxz>1</fphxz>
+                    <spmc>木薯干</spmc>
+                    <spsm/>
+                    <ggxh/>
+                    <dw/>
+                    <spsl/>
+                    <dj/>
+                    <je>-3</je>
+                    <sl>0.13</sl>
+                    <se>-0.39</se>
                     <spbm>1010102020000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>

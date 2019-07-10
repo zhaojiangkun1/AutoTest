@@ -34,8 +34,8 @@ public class GetAccessToken {
      */
     public String authentication1() throws IOException, TransformerException, SAXException, ParserConfigurationException {
         String result;//用来存放结果，并打印出来
-//        String url = "http://testservice.shuzutech.com:8081/invoice/token?&appId=f07dcd92fce254d4b344cb07dc4901e2&appSecret=ff63dbfed0bd85fdcf7adfc57cdfb3da40f5bda9";
-        String url = "https://paymgmt.shuzutech.com/invoice/token?&appId=253478c77363a9156e3e633bcb76dc1e&appSecret=70492f9f3f599ff030493a20631788c1f3ae52e1";//正式环境
+        String url = "http://testservice.shuzutech.com:8081/invoice/token?&appId=66c9cf9051f23b55bdb3b5734caa4830&appSecret=9f21bc86b01bf7e610faf45c85bebf401d3549b5";
+//        String url = "https://paymgmt.shuzutech.com/invoice/token?&appId=253478c77363a9156e3e633bcb76dc1e&appSecret=70492f9f3f599ff030493a20631788c1f3ae52e1";//正式环境
         HttpClient client = new DefaultHttpClient();
         //这个是用来执行get方法的
         HttpGet get = new HttpGet(url);
