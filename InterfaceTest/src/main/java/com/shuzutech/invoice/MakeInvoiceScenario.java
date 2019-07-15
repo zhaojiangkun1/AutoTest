@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 public class MakeInvoiceScenario {
 
-    String newShnsrsbh="500102010001459";
-    String newJsbh = "500102010001459~~499000115698";
+    String newShnsrsbh="110101201707010043";
+    String newJsbh = "110101201707010043~~A20016420000265";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;
@@ -93,13 +93,13 @@ public class MakeInvoiceScenario {
         Assert.assertEquals(code,99);
     }
 
-    @Test(groups = {"四川自助开票"})
-    public void siChuanInvoice() throws Exception {
-        String newShnsrsbh="500102010003543";
-        String newJsbh = "500102010003543~~500102010003543";
-        String fileName = "sichuan.xml";
-        new UpdateInvoiceBody().updateMerchantsInfo(filePath+fileName,newShnsrsbh,newJsbh);
-        int code = mi.makeInvoice(fileName);
+    @Test(groups = {"自助开票"})
+    public void ziZhuInvoice() throws Exception {
+        String newShnsrsbh="110101201707010043";
+        String newJsbh = "110101201707010043~~A20016420000265";
+        String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
+        new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
+        int code = mi.makeInvoice(file);
         Assert.assertEquals(code,0);
     }
 

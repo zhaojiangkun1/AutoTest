@@ -1,11 +1,9 @@
 package com.shuzutech.smartPrint;
 
 import com.shuzutech.config.RequestInterface;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 

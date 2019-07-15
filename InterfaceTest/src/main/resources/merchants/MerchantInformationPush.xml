@@ -3,23 +3,23 @@
     <body>
         <input>
             <channelId>40</channelId>
-            <clientName>许继测试商户12345</clientName>
-            <provinceno>410000</provinceno>
+            <clientName>许继测试商户12346</clientName>
+            <provinceno>110000</provinceno>
             <dispatch>0</dispatch>
-            <nsrsbh>154413222200022</nsrsbh>
-            <businessAddress>许继地址</businessAddress>
+            <nsrsbh>154413222200032</nsrsbh>
+            <businessAddress>许继测试商户地址1</businessAddress>
             <tel>16529131015</tel>
-            <openBank>招商银行</openBank>
-            <accountNo>6226090219298758</accountNo>
-            <phone>16529131015</phone>
+            <openBank>招商银行1</openBank>
+            <accountNo>6226090212498758</accountNo>
+            <phone>16729131015</phone>
             <salerMobile></salerMobile>
             <sbbh></sbbh>
             <hxbbh></hxbbh>
             <xmmc></xmmc>
-            <defautGoods></defautGoods>
-            <goodsId></goodsId>
-            <taxRate></taxRate>
-            <kpr>许继开票人</kpr>
+            <defautGoods>代收民航发展基金</defautGoods>
+            <goodsId>6130000000000000000</goodsId>
+            <taxRate>0.06</taxRate>
+            <kpr></kpr>
         </input>
     </body>
 </business>

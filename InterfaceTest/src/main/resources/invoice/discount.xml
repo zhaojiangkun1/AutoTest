@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>41120190618183400</fpqqlsh>
+            <fpqqlsh>74120190712142620</fpqqlsh>
             <shnsrsbh>110101201707010057</shnsrsbh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
-            <yhlx>0</yhlx>
+            <yhlx>1</yhlx>
             <ghdwsbh/>
             <ghdwmc>南京数族信息科技有限公司</ghdwmc>
             <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
@@ -35,9 +35,9 @@
                     <dw/>
                     <spsl/>
                     <dj/>
-                    <je>-2.96</je>
+                    <je>-4</je>
                     <sl>0.06</sl>
-                    <se>-0.18</se>
+                    <se>-0.24</se>
                     <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>

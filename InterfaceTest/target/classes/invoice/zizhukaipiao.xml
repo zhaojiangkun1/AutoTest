@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>486201917141006155</fpqqlsh>
-            <shnsrsbh>500102010003543</shnsrsbh>
-            <jsbh>500102010003543~~500102010003543</jsbh>
+            <fpqqlsh>78720190712145256</fpqqlsh>
+            <shnsrsbh>110101201707010043</shnsrsbh>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>1</yhlx>
@@ -16,7 +16,7 @@
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
+                    <spmc>代收民航发展基金</spmc>
                     <ggxh/>
                     <dw/>
                     <spsl>1.12</spsl>
@@ -24,7 +24,7 @@
                     <je>20.16</je>
                     <sl>0</sl>
                     <se>0</se>
-                    <spbm>3070401000000000000</spbm>
+                    <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs>2</lslbs>
