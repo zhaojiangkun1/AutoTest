@@ -1,5 +1,6 @@
 package com.shuzutech.invoiceQuery;
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.Md5;
 import com.shuzutech.config.RequestInterface;
 import org.apache.http.HttpResponse;
@@ -29,7 +30,7 @@ public class InvoicePrintingQuery {
      */
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\merchants\\";
     @Test
-    public void invoicePrintingQuery() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
-      new RequestInterface().requestInterface(filePath+"MerchantInformationPush.xml");
+    public void invoicePrintingQuery() throws Exception {
+      new RequestInterface().requestInterface(filePath+"MerchantInformationPush.xml", InterfaceName.TEST);
     }
 }

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>27720190702175333</fpqqlsh>
-            <shnsrsbh>500102010000097</shnsrsbh>
-            <jsbh>500102010000097~~e3ed54a6f58dc72c21577077793b8bc8</jsbh>
+            <fpqqlsh>2620190719161333</fpqqlsh>
+            <shnsrsbh>110101201707010043</shnsrsbh>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>1</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
-            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
-            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
-            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <ghdwsbh/>
+            <ghdwmc>山水话江南</ghdwmc>
+            <ghdwdzdh/>
+            <ghdwyhzh/>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>金属化学物</spmc>
+                    <spmc>面条</spmc>
                     <ggxh/>
                     <dw/>
-                    <spsl>-3.6</spsl>
-                    <dj>6.10</dj>
-                    <je>-21.96</je>
+                    <spsl>-3</spsl>
+                    <dj>2.3</dj>
+                    <je>-6.9</je>
                     <sl>0.06</sl>
-                    <se>-1.32</se>
-                    <spbm>1070201110000000000</spbm>
+                    <se>-0.41</se>
+                    <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -33,8 +33,8 @@
             <skr/>
             <fhr/>
             <kpr/>
-            <yfpdm>152000111666</yfpdm>
-            <yfphm>73673592</yfphm>
+            <yfpdm>150003522222</yfpdm>
+            <yfphm>59952187</yfphm>
             <sprsjh>zhaokun@shuzutech.com</sprsjh>
         </input>
     </body>

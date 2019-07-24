@@ -3,15 +3,18 @@
     <body>
         <input>
             <channelId>40</channelId>
-            <clientName>许继测试商户12346</clientName>
-            <provinceno>110000</provinceno>
-            <dispatch>0</dispatch>
-            <nsrsbh>154413222200032</nsrsbh>
-            <businessAddress>许继测试商户地址1</businessAddress>
-            <tel>16529131015</tel>
+            <clientName>许继测试8</clientName>
+            <provinceno>340000</provinceno>
+            <cityno></cityno>
+            <dispatch>1</dispatch>
+            <nsrsbh>154413222300039</nsrsbh>
+            <businessAddress>许继测试地址7</businessAddress>
+            <tel>16629135020</tel>
             <openBank>招商银行1</openBank>
             <accountNo>6226090212498758</accountNo>
-            <phone>16729131015</phone>
+            <phone>16829135020</phone>
+            <contact>admin</contact>
+            <idno>342224199203080876</idno>
             <salerMobile></salerMobile>
             <sbbh></sbbh>
             <hxbbh></hxbbh>

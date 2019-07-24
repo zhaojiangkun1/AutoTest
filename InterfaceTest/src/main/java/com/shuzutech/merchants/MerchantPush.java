@@ -1,7 +1,8 @@
 package com.shuzutech.merchants;
 
 
-import com.shuzutech.config.WithParamRequestInteface;
+import com.shuzutech.config.InterfaceName;
+import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -19,14 +20,18 @@ public class MerchantPush {
      *如果业务员手机号错误，直接抛错，不会再去查找channelID
      *
      *
-     *
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */
     String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\merchants\\MerchantInformationPush.xml";
     @Test
     public void merchantPush() throws Exception {
-        String url = "http://106.14.193.154:8084/api/merchant/business";
-        new WithParamRequestInteface().requestInterface(url,file);
+        new RequestInterface().requestInterface(file,InterfaceName.SHANGHU);
+    }
+
+    @Test
+    public void shanghuQuery() throws Exception{
+        String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\merchants\\shanghuInfoQuery.xml";
+        new RequestInterface().requestInterface(file,InterfaceName.SHANGHU);
     }
 }

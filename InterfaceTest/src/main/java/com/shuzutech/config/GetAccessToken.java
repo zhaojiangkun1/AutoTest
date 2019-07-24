@@ -3,55 +3,33 @@ package com.shuzutech.config;
 
 import org.apache.http.Consts;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
+
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.apache.ibatis.session.SqlSession;
 import org.testng.annotations.Test;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
+
 import java.io.IOException;
+
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class GetAccessToken {
 
+    private static String current_time = ConfigFile.sd.format(new Date());
+
 
     @Test
-    public static String getAccessToken() throws IOException, TransformerException, SAXException, ParserConfigurationException {
+    public static String getAccessToken(InterfaceName name) throws IOException {
 
-        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String date = sd.format(new Date());
-
-        //定义需要的字符串
-        String appid = "f07dcd92fce254d4b344cb07dc4901e2";
-        String appSecret = "ff63dbfed0bd85fdcf7adfc57cdfb3da40f5bda9";
-//        String appid = "253478c77363a9156e3e633bcb76dc1e";
-//        String appSecret = "70492f9f3f599ff030493a20631788c1f3ae52e1";
-        String url;
-        String uri;
-        String getUrl;
-        ResourceBundle bundle;
-
-        //获取测试url地址
-        bundle = ResourceBundle.getBundle("config.application", Locale.CHINA);
-//        bundle = ResourceBundle.getBundle("config.application",new Locale("zh","CN"));
-        url = bundle.getString("test.url");//测试环境地址
-//        url = bundle.getString("pro.url");//正式环境地址
-        uri = bundle.getString("get.uri");
-        getUrl = url+uri;
+        String appid = ConfigFile.getAppid(name);
+        String appSecret = ConfigFile.getAppSecret(name);
+        String getUrl = ConfigFile.getUrl(name);
 
         //封装请求参数
         List<BasicNameValuePair> list = new ArrayList<>();
@@ -63,12 +41,10 @@ public class GetAccessToken {
         System.out.println("Get请求中的params:"+params);
 
         //创建HttpGet请求
-        HttpClient client = new DefaultHttpClient();
+        DefaultHttpClient client = new DefaultHttpClient();
         HttpGet httpGet = new HttpGet(getUrl+"?"+params);
-
         //执行httpGet
         HttpResponse response = client.execute(httpGet);
-
         //获取执行的结果，把结果转化成字符串
         String result = EntityUtils.toString(response.getEntity(),"utf-8");
 
@@ -78,31 +54,44 @@ public class GetAccessToken {
         String accessToken = result.substring(result.indexOf(str1)+(str1).length(),
                              result.indexOf(str2));
         System.out.println("accessToken:"+accessToken);
-        writeAccessToken(accessToken,date);
+//        writeAccessToken(accessToken,date);
         return accessToken;
 
     }
 
+    @Test
+    public static String getToken(InterfaceName name) throws Exception {
 
-    public static void writeAccessToken(String newAccessToken,String newDate) throws ParserConfigurationException, IOException, SAXException, TransformerException {
-        String fileName = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
-        DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-        Document document = documentBuilder.parse(fileName);
-        Element root = document.getDocumentElement();
-        NodeList resultList = root.getElementsByTagName("result");
-        Node item = resultList.item(0);
-        Element resultElement = (Element) item;
-        NodeList accessToken = resultElement.getElementsByTagName("accessToken");
-        NodeList date = resultElement.getElementsByTagName("date");
-        System.out.println("旧的accessToken:"+accessToken.item(0).getTextContent());
-        System.out.println("新的accessToken:"+newAccessToken);
-        //修改数据
-        accessToken.item(0).setTextContent(newAccessToken);
-        date.item(0).setTextContent(newDate);
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
-        Source source = new DOMSource(document);
-        Result result = new StreamResult(fileName);
-        transformer.transform(source,result);
+        String access_token;
+        SqlSession session = DataBaseUtil.getSqlSession();
+        SaveToken saveToken = session.selectOne("getToken",1);
+
+        Date old_time = saveToken.getCurrentTime();
+
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date endTime = sdf.parse(current_time);
+        //计算前后时间差，单位是秒
+        long diffSec = (endTime.getTime() - old_time.getTime())/1000;
+        System.out.println("之前的时间:"+old_time);
+        System.out.println("当前的时间:"+endTime);
+        System.out.println("前后时间差："+diffSec);
+
+
+        if(diffSec > 7200){
+            access_token = GetAccessToken.getAccessToken(name);
+            SaveToken st = new SaveToken();
+            st.setId(1);
+            st.setCurrentTime(endTime);
+            st.setAccessToken(access_token);
+            session.update("updateToken",st);
+            session.commit();
+        }else {
+            String old_AccessToken = saveToken.getAccessToken();
+            access_token = old_AccessToken;
+        }
+
+        return access_token;
     }
+
 
 }

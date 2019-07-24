@@ -1,5 +1,6 @@
 package com.shuzutech.zpyttlx;
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class InvoiceTtitleInterface {
     @Test
     public void invoiceTitleQuery() throws Exception{
         String fileName = "invoiceTitleQuery.xml";
-        new RequestInterface().requestInterface(filePath+fileName);
+        new RequestInterface().requestInterface(filePath+fileName, InterfaceName.TEST);
     }
 
     /**
@@ -24,7 +25,7 @@ public class InvoiceTtitleInterface {
     @Test
     public void aiCode() throws Exception{
         String fileName = "aicode.xml";
-        new RequestInterface().requestInterface(filePath+fileName);
+        new RequestInterface().requestInterface(filePath+fileName,InterfaceName.TEST);
     }
 
 }

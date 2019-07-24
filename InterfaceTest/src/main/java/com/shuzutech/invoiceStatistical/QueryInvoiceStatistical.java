@@ -1,5 +1,6 @@
 package com.shuzutech.invoiceStatistical;
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
@@ -34,25 +35,25 @@ public class QueryInvoiceStatistical {
     @Test(groups = {"统计电子票"})
     public void statisicalEleInvoice() throws Exception {
         UpdateFplxdm(file,"026");
-        new RequestInterface().requestInterface(file);
+        new RequestInterface().requestInterface(file, InterfaceName.TEST);
     }
     //查找专票统计
     @Test(groups = {"统计专票"})
     public void statisicalZhuanInvoice() throws Exception{
         UpdateFplxdm(file,"004");
-        new RequestInterface().requestInterface(file);
+        new RequestInterface().requestInterface(file,InterfaceName.TEST);
     }
 
     @Test(groups = {"统计卷票"})
     public void statisicalJuanInvoice() throws Exception {
         UpdateFplxdm(file,"025");
-        new RequestInterface().requestInterface(file);
+        new RequestInterface().requestInterface(file,InterfaceName.TEST);
     }
 
     @Test(groups = {"统计普票"})
     public void statisicalPuInvoice() throws Exception {
         UpdateFplxdm(file,"007");
-        new RequestInterface().requestInterface(file);
+        new RequestInterface().requestInterface(file,InterfaceName.TEST);
     }
 
     public void UpdateFplxdm(String fileName,String fplxdm) throws ParserConfigurationException, IOException, SAXException, TransformerException {

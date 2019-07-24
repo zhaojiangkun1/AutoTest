@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shuzutech.cases">
+
+    <!--获取发送短信的case-->
+    <select id="selectcase" parameterType="Integer" resultType="com.shuzutech.bean.SmsList">
+        select * from sendSms
+        where id = #{id};
+    </select>
+
+    <select id="getToken" parameterType="Integer" resultType="com.shuzutech.bean.SaveToken">
+        select * from savetoken
+        where id = #{id};
+    </select>
+
+    <update id="updateToken" parameterType="com.shuzutech.bean.SaveToken">
+        update savetoken set currentTime = #{currentTime},
+        accessToken = #{accessToken} where id = #{id};
+    </update>
+    
+    <select id="getPageModel" resultType="com.shuzutech.bean.PageModel" parameterType="com.shuzutech.bean.PageModel">
+        select * from pagemodel where id = #{id};
+    </select>
+
+    <select id="getTaskId" resultType="com.shuzutech.bean.SendResult" parameterType="com.shuzutech.bean.SendResult">
+        select * from sendresult order by id desc limit 1;
+    </select>
+
+    <insert id="addTaskId" parameterType="com.shuzutech.bean.SendResult">
+        insert into sendresult (id,taskId) values (#{id},#{taskId});
+    </insert>
+
+</mapper>

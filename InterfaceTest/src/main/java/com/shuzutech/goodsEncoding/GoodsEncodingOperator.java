@@ -1,6 +1,7 @@
 package com.shuzutech.goodsEncoding;
 
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
@@ -21,9 +22,9 @@ public class GoodsEncodingOperator {
      * @throws NoSuchAlgorithmException
      */
     @Test
-    public void settingEncoding() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
+    public void settingEncoding() throws Exception {
         String file = "encodingsetting.xml";
-        new RequestInterface().requestInterface(filePath+file);
+        new RequestInterface().requestInterface(filePath+file, InterfaceName.TEST);
 
     }
 
@@ -31,26 +32,31 @@ public class GoodsEncodingOperator {
      * 自定义商品编码删除
      */
     @Test
-    public void deleteEncoding() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
+    public void deleteEncoding() throws Exception {
         String file = "encodingdelete.xml";
-        new RequestInterface().requestInterface(filePath+file);
+        new RequestInterface().requestInterface(filePath+file,InterfaceName.TEST);
 
     }
     /**
      * 商品编码默认值设置
      */
     @Test
-    public void defaultEncoding() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
+    public void defaultEncoding() throws Exception {
         String file = "defaultencodingsetting.xml";
-        new RequestInterface().requestInterface(filePath+file);
+        new RequestInterface().requestInterface(filePath+file,InterfaceName.TEST);
 
     }
     /**
      * 4.5.	获取商户开票商品列表
      */
     @Test
-    public void getGoodsList() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
+    public void getGoodsList() throws Exception {
         String file = "getgoodslist.xml";
-        new RequestInterface().requestInterface(filePath+file);
+        new RequestInterface().requestInterface(filePath+file,InterfaceName.TEST);
+    }
+    @Test
+    public void getSpbm() throws Exception{
+        String file = "getspbm.xml";
+        new RequestInterface().requestInterface(filePath+file,InterfaceName.TEST);
     }
 }

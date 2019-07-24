@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="获取AccessToken信息">
+    <select id="getToken" parameterType="Integer" resultType="com.shuzutech.config.SaveToken">
+        select * from saveToken
+        where id = #{id};
+    </select>
+    
+    <update id="updateToken" parameterType="com.shuzutech.config.SaveToken">
+        update saveToken set currentTime = #{currentTime},
+        accessToken = #{accessToken} where id = #{id};
+    </update>
+
+</mapper>

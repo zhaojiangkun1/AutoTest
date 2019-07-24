@@ -1,6 +1,7 @@
 package com.shuzutech.invoiceInvalid;
 
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
@@ -22,7 +23,7 @@ public class InvalidInvoice {
      */
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invalidInvoice\\";
     @Test
-    public void invalidInvoice() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
-        new RequestInterface().requestInterface(filePath+"invalidInvoice.xml");
+    public void invalidInvoice() throws Exception {
+        new RequestInterface().requestInterface(filePath+"invalidInvoice.xml", InterfaceName.TEST);
     }
 }

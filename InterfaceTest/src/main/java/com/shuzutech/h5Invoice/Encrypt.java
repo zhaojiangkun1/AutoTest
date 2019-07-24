@@ -1,6 +1,7 @@
 package com.shuzutech.h5Invoice;
 
 import com.shuzutech.config.GetAccessToken;
+import com.shuzutech.config.InterfaceName;
 import org.apache.commons.codec.binary.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.testng.annotations.Test;
@@ -268,7 +269,7 @@ public class Encrypt {
         System.out.println("本次发票请求流水号:"+fpqqlsh);
     	String ff = "UA=Chrome&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
 //        String ff = "UA=Chrome&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=007&shnsrsbh=110101201707010057&operator=操作人&yfpdm=050000000003&yfphm=32226187";
-        String AccessToken = GetAccessToken.getAccessToken();
+        String AccessToken = GetAccessToken.getAccessToken(InterfaceName.TEST);
 
     	String ecoderResult=null;
         try {
@@ -289,7 +290,7 @@ public class Encrypt {
     @Test
     public void invoiceConfig() throws SAXException, TransformerException, ParserConfigurationException, IOException {
         String  ic = "UA=Chrome&shnsrsbh=110101201707010057";
-        String accessToken = GetAccessToken.getAccessToken();
+        String accessToken = GetAccessToken.getAccessToken(InterfaceName.TEST);
         String ecoderResult=null;
         try {
             ecoderResult = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(ic,accessToken).getBytes("utf-8"));

@@ -1,5 +1,6 @@
 package com.shuzutech.goodsEncoding;
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
@@ -20,8 +21,8 @@ public class QuerySsbmqq {
 
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\goodsEncoding\\";
     @Test
-    public void SsbmqqQuery() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
-        new RequestInterface().requestInterface(filePath+"queryspbm.xml");
+    public void SsbmqqQuery() throws Exception {
+        new RequestInterface().requestInterface(filePath+"queryspbm.xml", InterfaceName.TEST);
 //
 //
     }

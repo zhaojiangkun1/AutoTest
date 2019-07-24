@@ -1,10 +1,7 @@
 package com.shuzutech.smartPrint;
 
 
-import com.shuzutech.config.GetAccessToken;
-import com.shuzutech.config.GetBundleResource;
-import com.shuzutech.config.Md5;
-import com.shuzutech.config.ReadFile;
+import com.shuzutech.config.*;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -32,16 +29,16 @@ public class FpdyDataRequestInterface {
     String APPID = "f07dcd92fce254d4b344cb07dc4901e2";//测试环境的appid
 //    String APPID = "253478c77363a9156e3e633bcb76dc1e";//正式环境的appid
 
-    String url = new GetBundleResource().getBundleResource(); //开票的url
-//    String url = new GetBundleResource().getBundleResource1();//臻票云抬头联想
+    String url = ConfigFile.postUrl(InterfaceName.TEST); //开票的url
+//    String url = new ConfigFile().getBundleResource1();//臻票云抬头联想
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     String date = simpleDateFormat.format(new Date());
     String access_token;
     String body;
 
-    public String requestInterface(String file) throws IOException, NoSuchAlgorithmException, ParseException, ParserConfigurationException, TransformerException, SAXException {
+    public String requestInterface(String file,InterfaceName name) throws IOException, NoSuchAlgorithmException, ParseException, ParserConfigurationException, TransformerException, SAXException {
         body = ReadFile.readFile(file);
-        getToken();
+        getToken(name);
         System.out.println("本次请求的accessToken:"+access_token);
         String headerContent = body + date + access_token;
         String s = Md5.EncoderByMd5(headerContent);
@@ -67,7 +64,7 @@ public class FpdyDataRequestInterface {
 //        System.out.println(result);
         return result;
     }
-    public void getToken() throws ParseException, SAXException, TransformerException, ParserConfigurationException, IOException {
+    public void getToken(InterfaceName name) throws ParseException, SAXException, TransformerException, ParserConfigurationException, IOException {
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
         DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         Document document = documentBuilder.parse(file);
@@ -88,7 +85,7 @@ public class FpdyDataRequestInterface {
         System.out.println("前后时间差："+diffSec);
 
         if(diffSec > 7200){
-            access_token = GetAccessToken.getAccessToken();
+            access_token = GetAccessToken.getAccessToken(name);
         }else {
             NodeList getAccessToken = resultElement.getElementsByTagName("accessToken");
             access_token = getAccessToken.item(0).getTextContent();

@@ -1,5 +1,6 @@
 package com.shuzutech.smartPrint;
 
+import com.shuzutech.config.InterfaceName;
 import com.shuzutech.config.RequestInterface;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -23,8 +24,8 @@ public class SmartPrint {
      */
     String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\smartprint\\smartprint.xml";
     @Test
-    public void smartPrint() throws IOException, NoSuchAlgorithmException, ParserConfigurationException, SAXException, ParseException, TransformerException {
-        new RequestInterface().requestInterface(file);
+    public void smartPrint() throws Exception {
+        new RequestInterface().requestInterface(file, InterfaceName.TEST);
     }
 
     /**
@@ -32,9 +33,9 @@ public class SmartPrint {
      */
 
     @Test
-    public void invoicePrint() throws SAXException, ParseException, NoSuchAlgorithmException, IOException, ParserConfigurationException, TransformerException {
+    public void invoicePrint() throws Exception {
         String fileName = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\invoiceprint.xml";
-        new RequestInterface().requestInterface(fileName);
+        new RequestInterface().requestInterface(fileName,InterfaceName.TEST);
     }
 
     /**
@@ -42,9 +43,9 @@ public class SmartPrint {
      */
 
     @Test
-    public void printQuery() throws SAXException, ParseException, NoSuchAlgorithmException, IOException, ParserConfigurationException, TransformerException {
+    public void printQuery() throws Exception {
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\smartprint\\printquery.xml";
-        new RequestInterface().requestInterface(file);
+        new RequestInterface().requestInterface(file,InterfaceName.TEST);
     }
 
     /**
@@ -55,7 +56,7 @@ public class SmartPrint {
     @Test
     public void getFpdyData() throws Exception{
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\FPDYDATA\\fpdydata.xml";
-        String result = new FpdyDataRequestInterface().requestInterface(file);
+        String result = new FpdyDataRequestInterface().requestInterface(file,InterfaceName.TEST);
         String retrundata1 = "![CDATA[";
         String returndata2 = "]]&gt";
         String body = result.substring(result.indexOf(retrundata1)+retrundata1.length(),

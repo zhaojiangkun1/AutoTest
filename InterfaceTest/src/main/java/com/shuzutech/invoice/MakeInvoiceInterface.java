@@ -1,8 +1,6 @@
 package com.shuzutech.invoice;
 
-import com.shuzutech.config.GetAccessToken;
-import com.shuzutech.config.Md5;
-import com.shuzutech.config.ReadFile;
+import com.shuzutech.config.*;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
@@ -19,28 +17,20 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
-import java.util.ResourceBundle;
 
 public class MakeInvoiceInterface {
-    //测试环境
-    String url;
-    String appId = "f07dcd92fce254d4b344cb07dc4901e2";
-    String accessToken;
 
-    String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
+    private static String accessToken;
 
+   private static String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
 
-    public void getUrl(){
-        ResourceBundle bundle = ResourceBundle.getBundle("config.application", Locale.CHINA);
-        url = bundle.getString("test.url") + bundle.getString("post.uri");//测试环境
-//        url = bundle.getString("devPost.url") + bundle.getString("post.uri");//正式环境
-    }
-
-    public int makeInvoice(String fileName) throws Exception {
+    public static int makeInvoice(String fileName,InterfaceName name) throws Exception {
         //获取当前时间
         SimpleDateFormat sd=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String date = sd.format(new Date());
+
+        String url = ConfigFile.postUrl(name);
+        String appId = ConfigFile.getAppid(name);
 
         new UpdateFpqqlsh().updateFppqqlsh(fileName);
         String body = new ReadFile().readFile(fileName);
@@ -64,7 +54,7 @@ public class MakeInvoiceInterface {
         System.out.println("前后时间差："+diffSec);
 
         if(diffSec > 7200){
-            accessToken = GetAccessToken.getAccessToken();
+            accessToken = GetAccessToken.getAccessToken(name);
         }else {
             NodeList getAccessToken = resultElement.getElementsByTagName("accessToken");
             accessToken = getAccessToken.item(0).getTextContent();
@@ -75,8 +65,6 @@ public class MakeInvoiceInterface {
 
         String md5Content = Md5.EncoderByMd5(body+date+accessToken);
         System.out.println("加密后的文件为:" + md5Content);
-        //执行getUrl方法，获取Url
-        getUrl();
 
         //模拟HttpPost请求
         HttpClient client = new DefaultHttpClient();
