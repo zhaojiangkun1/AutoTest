@@ -7,14 +7,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -22,7 +15,7 @@ public class MakeInvoiceInterface {
 
     private static String accessToken;
 
-   private static String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
+//   private static String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\result\\result.xml";
 
     public static int makeInvoice(String fileName,InterfaceName name) throws Exception {
         //获取当前时间
@@ -30,36 +23,13 @@ public class MakeInvoiceInterface {
         String date = sd.format(new Date());
 
         String url = ConfigFile.postUrl(name);
+        System.out.println("请求的url:"+url);
         String appId = ConfigFile.getAppid(name);
 
         new UpdateFpqqlsh().updateFppqqlsh(fileName);
         String body = new ReadFile().readFile(fileName);
 
-        DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-        Document document = documentBuilder.parse(file);
-        Element root = document.getDocumentElement();
-        NodeList resultList = root.getElementsByTagName("result");
-        Node item = resultList.item(0);
-        Element resultElement = (Element) item;
-        NodeList getDate = resultElement.getElementsByTagName("date");
-        String oldDate = getDate.item(0).getTextContent();
-
-        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date beginTime = sdf.parse(oldDate);
-        Date endTime = sdf.parse(date);
-        //计算前后时间差，单位是秒
-        long diffSec = (endTime.getTime() - beginTime.getTime())/1000;
-        System.out.println("之前的时间:"+beginTime);
-        System.out.println("当前的时间:"+endTime);
-        System.out.println("前后时间差："+diffSec);
-
-        if(diffSec > 7200){
-            accessToken = GetAccessToken.getAccessToken(name);
-        }else {
-            NodeList getAccessToken = resultElement.getElementsByTagName("accessToken");
-            accessToken = getAccessToken.item(0).getTextContent();
-        }
-
+        accessToken = GetAccessToken.getToken(name);
 
         System.out.println("本次请求的accessToken:"+accessToken);
 

@@ -1,5 +1,5 @@
 package com.shuzutech.config;
 
 public enum InterfaceName {
-    DEV,TEST,PRO,SHANGHU
+    DEV,TEST,PRO,SHANGHUTEST,SHANGHUPRO,SHANGHUDEV
 }

@@ -63,8 +63,7 @@ public class GetAccessToken {
     public static String getToken(InterfaceName name) throws Exception {
 
         String access_token;
-        SqlSession session = DataBaseUtil.getSqlSession();
-        SaveToken saveToken = session.selectOne("getToken",1);
+        SaveToken saveToken = judgeToeknEnv(name);
 
         Date old_time = saveToken.getCurrentTime();
 
@@ -79,18 +78,54 @@ public class GetAccessToken {
 
         if(diffSec > 7200){
             access_token = GetAccessToken.getAccessToken(name);
-            SaveToken st = new SaveToken();
-            st.setId(1);
-            st.setCurrentTime(endTime);
-            st.setAccessToken(access_token);
-            session.update("updateToken",st);
-            session.commit();
+            updateToken(name,endTime,access_token);
         }else {
             String old_AccessToken = saveToken.getAccessToken();
             access_token = old_AccessToken;
         }
 
         return access_token;
+    }
+
+    public static SaveToken judgeToeknEnv(InterfaceName name) throws IOException {
+        SqlSession session = DataBaseUtil.getSqlSession();
+        SaveToken saveToken = null;
+        if (name == InterfaceName.TEST){
+            saveToken = session.selectOne("getToken",3);
+        }
+        if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
+            saveToken = session.selectOne("getToken",1);
+        }
+        if (name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
+            saveToken = session.selectOne("getToken",2);
+        }
+        if (name == InterfaceName.SHANGHUTEST){
+            saveToken = session.selectOne("getToken",3);
+        }
+
+        return saveToken;
+    }
+
+    public static void updateToken(InterfaceName name,Date endTime,String newAccessToken) throws IOException {
+        SqlSession session = DataBaseUtil.getSqlSession();
+        SaveToken st = new SaveToken();
+        st.setCurrentTime(endTime);
+        st.setAccessToken(newAccessToken);
+        if (name == InterfaceName.SHANGHUPRO || name == InterfaceName.PRO){
+            st.setId(1);
+            session.update("updateToken",st);
+        }
+        if (name == InterfaceName.TEST || name == InterfaceName.SHANGHUTEST){
+            st.setId(3);
+            session.update("updateToken",st);
+        }
+        if (name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
+            st.setId(2);
+            session.update("updateToken",st);
+        }
+
+        session.commit();
+
     }
 
 

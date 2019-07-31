@@ -22,6 +22,7 @@ public class SwitchJson {
         jsonObject.put("templateId",smsList.getTemplateId());
         jsonObject.put("placeHolderContent",smsList.getPlaceHolderContent());
 
+        System.out.println(jsonObject);
         return jsonObject.toString();
 
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>2620190719161333</fpqqlsh>
-            <shnsrsbh>110101201707010043</shnsrsbh>
-            <jsbh>110101201707010043~~A20016420000265</jsbh>
+            <fpqqlsh>39720190726134919</fpqqlsh>
+            <shnsrsbh>110101201707010057</shnsrsbh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>1</kplx>
             <yhlx>0</yhlx>
@@ -14,14 +14,14 @@
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>面条</spmc>
+                    <spmc>稻谷</spmc>
                     <ggxh/>
                     <dw/>
-                    <spsl>-3</spsl>
-                    <dj>2.3</dj>
-                    <je>-6.9</je>
-                    <sl>0.06</sl>
-                    <se>-0.41</se>
+                    <spsl>-1</spsl>
+                    <dj>0.71</dj>
+                    <je>-0.71</je>
+                    <sl>0.03</sl>
+                    <se>-0.02</se>
                     <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
@@ -30,11 +30,11 @@
                 </group>
             </fyxm>
             <bz/>
-            <skr/>
-            <fhr/>
-            <kpr/>
-            <yfpdm>150003522222</yfpdm>
-            <yfphm>59952187</yfphm>
+            <skr>skr</skr>
+            <fhr>fhr</fhr>
+            <kpr>admin</kpr>
+            <yfpdm>152000186357</yfpdm>
+            <yfphm>40023806</yfphm>
             <sprsjh>zhaokun@shuzutech.com</sprsjh>
         </input>
     </body>

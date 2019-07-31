@@ -2,17 +2,17 @@
 <business id="KHXXTS">
     <body>
         <input>
-            <channelId>40</channelId>
-            <clientName>许继测试8</clientName>
+            <channelId>603</channelId>
+            <clientName>安徽测试账户8</clientName>
             <provinceno>340000</provinceno>
             <cityno></cityno>
             <dispatch>1</dispatch>
-            <nsrsbh>154413222300039</nsrsbh>
-            <businessAddress>许继测试地址7</businessAddress>
-            <tel>16629135020</tel>
-            <openBank>招商银行1</openBank>
-            <accountNo>6226090212498758</accountNo>
-            <phone>16829135020</phone>
+            <nsrsbh>154413222300055</nsrsbh>
+            <businessAddress>安徽测试商户地址8</businessAddress>
+            <tel>16629135036</tel>
+            <openBank>招商银行7</openBank>
+            <accountNo>6226090212478759</accountNo>
+            <phone>16829135036</phone>
             <contact>admin</contact>
             <idno>342224199203080876</idno>
             <salerMobile></salerMobile>

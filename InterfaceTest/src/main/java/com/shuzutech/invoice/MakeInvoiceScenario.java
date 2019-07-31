@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class MakeInvoiceScenario {
 
-    String newShnsrsbh="110101201707010043";
-    String newJsbh = "110101201707010043~~A20016420000265";
+    String newShnsrsbh="110101201707010037";
+    String newJsbh = "110101201707010037~~499000152093";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;
@@ -23,7 +23,7 @@ public class MakeInvoiceScenario {
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         UpdateGroup.updateGroup(file,"1","86","86","0","0");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file, InterfaceName.TEST);
+        int code = mi.makeInvoice(file, InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -37,7 +37,7 @@ public class MakeInvoiceScenario {
     public void normalRate1() throws Exception {
         UpdateGroup.updateGroup(file,"3.6","6.10","21.96","0.06","1.32");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.PRO);
         Assert.assertEquals(code,0);
 
     }
@@ -75,7 +75,7 @@ public class MakeInvoiceScenario {
     @Test(priority = 2,groups = {"折扣行开票"})
     public void disCount() throws Exception {
         String fileDis = "discount.xml";
-        String fil = filePath + fileDis;
+        String file = filePath + fileDis;
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
         int code = mi.makeInvoice(file,InterfaceName.TEST);
         Assert.assertEquals(code,0);
@@ -96,11 +96,12 @@ public class MakeInvoiceScenario {
 
     @Test(groups = {"自助开票"})
     public void ziZhuInvoice() throws Exception {
-        //总部：110101201707010043~~A20016420000265   110101201707010057~~499000152456
-        // 许继或者宁波：554433221100001~~499111004288
+        //总部：110101201707010043~~A20016420000265   110101201707010057~~499000152456  110101201707010037~~499000152093
+        // 许继或者广东：554433221100001~~499111004288
         //宁波：500102010001459  500102010001459~~499000115698
-        String newShnsrsbh="110101201707010043";
-        String newJsbh = "110101201707010043~~A20016420000265";
+        //四川：500102010003543~~500102010003543
+        String newShnsrsbh="500102010003543";
+        String newJsbh = "500102010003543~~500102010003543";
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         int code = mi.makeInvoice(file,InterfaceName.TEST);
@@ -116,8 +117,8 @@ public class MakeInvoiceScenario {
     public void makeFuShuInvoice() throws Exception {
         String fileName = "fushufapiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(filePath+fileName,newShnsrsbh,newJsbh);
-        UpdateGroup.updateGroup(filePath+fileName,"-3","2.3","-6.9","0.06","-0.41");
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        UpdateGroup.updateGroup(filePath+fileName,"-1","0.71","-0.71","0.03","-0.02");
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
