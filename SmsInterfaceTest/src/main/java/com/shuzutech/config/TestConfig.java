@@ -28,6 +28,16 @@ public class TestConfig {
             String uri = bundle.getString("proResultUri");
             url = addr + uri;
         }
+        if (name == InterfaceNum.PRONEWREQ){
+            String addr = bundle.getString("proNewreq");
+            String uri = bundle.getString("proSendUri");
+            url = addr + uri;
+        }
+        if (name == InterfaceNum.NEWGETRESULT){
+            String addr = bundle.getString("proNewreq");
+            String uri = bundle.getString("proResultUri");
+            url = addr + uri;
+        }
 
         return url;
     }
@@ -39,11 +49,11 @@ public class TestConfig {
             String getUrl = bundle.getString("testAccessTokenUrl");
             url = getUrl + uri;
         }
-        if (name == InterfaceNum.GETRESULT){
+        if (name == InterfaceNum.GETRESULT || name == InterfaceNum.NEWGETRESULT){
             String getUrl = bundle.getString("proGetUrl");
             url = getUrl + uri;
         }
-        if (name == InterfaceNum.PRO){
+        if (name == InterfaceNum.PRO || name == InterfaceNum.PRONEWREQ){
             String getUrl = bundle.getString("proGetUrl");
             url = getUrl + uri;
         }
@@ -56,10 +66,10 @@ public class TestConfig {
             appId = bundle.getString("testAppId");
         }
 
-        if (name == InterfaceNum.PRO){
+        if (name == InterfaceNum.PRO || name == InterfaceNum.PRONEWREQ){
             appId = bundle.getString("proAppId");
         }
-        if (name == InterfaceNum.GETRESULT){
+        if (name == InterfaceNum.GETRESULT || name == InterfaceNum.NEWGETRESULT){
             appId = bundle.getString("proAppId");
         }
 
@@ -68,13 +78,13 @@ public class TestConfig {
 
     public static String getAppSecret(InterfaceNum name){
         String appSecret = "";
-        if (name == InterfaceNum.PRO){
+        if (name == InterfaceNum.PRO || name == InterfaceNum.PRONEWREQ){
             appSecret = bundle.getString("proappSecret");
         }
         if (name == InterfaceNum.TEST){
             appSecret = bundle.getString("testappSecret");
         }
-        if (name == InterfaceNum.GETRESULT){
+        if (name == InterfaceNum.GETRESULT || name == InterfaceNum.NEWGETRESULT){
             appSecret = bundle.getString("proappSecret");
         }
 

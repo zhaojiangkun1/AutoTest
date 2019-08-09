@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>89520190731183433</fpqqlsh>
-            <shnsrsbh>110101201707010037</shnsrsbh>
-            <jsbh>110101201707010037~~499000152093</jsbh>
+            <fpqqlsh>75520190808102423</fpqqlsh>
+            <shnsrsbh>554433221100001</shnsrsbh>
+            <jsbh>554433221100001~~499111004288</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -17,15 +17,15 @@
                     <spmc>代收民航发展基金</spmc>
                     <ggxh/>
                     <dw/>
-                    <spsl>1</spsl>
-                    <dj>86</dj>
-                    <je>86</je>
-                    <sl>0</sl>
-                    <se>0</se>
+                    <spsl/>
+                    <dj/>
+                    <je>21.96</je>
+                    <sl>0.13</sl>
+                    <se>2.85</se>
                     <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs>3</lslbs>
+                    <lslbs/>
                     <zzstsgl/>
                 </group>
             </fyxm>

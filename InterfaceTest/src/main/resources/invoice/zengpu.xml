@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>45220190710113431</fpqqlsh>
+            <fpqqlsh>62220190808104515</fpqqlsh>
             <jsbh>110101201707010043~~A20016420000265</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
@@ -36,7 +36,7 @@
             <kpr>开票人</kpr>
             <yfpdm/>
             <yfphm/>
-            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+            <sprsjh/>
         </input>
     </body>
 </business>

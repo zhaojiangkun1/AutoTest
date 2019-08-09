@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class MakeInvoiceScenario {
 
-    String newShnsrsbh="110101201707010037";
-    String newJsbh = "110101201707010037~~499000152093";
+    String newShnsrsbh="110101201707010043";
+    String newJsbh = "110101201707010043~~A20016420000265";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;
@@ -23,7 +23,7 @@ public class MakeInvoiceScenario {
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         UpdateGroup.updateGroup(file,"1","86","86","0","0");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file, InterfaceName.PRO);
+        int code = mi.makeInvoice(file, InterfaceName.TEST);
         Assert.assertEquals(code,0);
     }
 
@@ -63,6 +63,19 @@ public class MakeInvoiceScenario {
     public void onlyJeAndSl() throws Exception {
         UpdateGroup.updateGroup(file,"","","21.96","0.13","2.85");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
+        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        Assert.assertEquals(code,0);
+    }
+
+    /**
+     * 带有清单标志的电子票
+     * @throws Exception
+     */
+
+    @Test(groups = {"带有清单标志的电子票"})
+    public void qdbzDianPiao() throws Exception {
+        String file = filePath+"qdbzdianpiao.xml";
+        new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         int code = mi.makeInvoice(file,InterfaceName.TEST);
         Assert.assertEquals(code,0);
     }
@@ -134,6 +147,13 @@ public class MakeInvoiceScenario {
         Assert.assertEquals(code,0);
     }
 
+    @Test(groups = {"多行卷票"})
+    public void makeDuohangJuanPiao() throws Exception {
+        String fileName = "maxjuanpiao.xml";
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        Assert.assertEquals(code,0);
+    }
+
     /**
      * 开普票
      * @throws Exception
@@ -160,7 +180,7 @@ public class MakeInvoiceScenario {
     }
 
     /**
-     * 8个商品多行普票
+     * 10个商品多行普票
      * @throws Exception
      */
     @Test
@@ -172,7 +192,7 @@ public class MakeInvoiceScenario {
     }
 
     /**
-     * 超过8行，带有清单标志
+     * 超过8行，带有清单标志的普票
      * @throws Exception
      */
 

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="InterfaceTest" />
+        <module name="OperatorFile" />
         <module name="SmsInterfaceTest" />
       </profile>
     </annotationProcessing>

@@ -23,18 +23,20 @@ public class SendSms {
      */
     @Test(groups = {"发短信"})
     public void sendSms() throws Exception {
-        String body = SwitchJson.switchJson("selectcase",2);
+        String body = SwitchJson.switchJson("selectcase",1);
         String result = SmsInterface.
-                sendSmsInterface(body,InterfaceNum.PRO);
+                sendSmsInterface(body,InterfaceNum.PRONEWREQ);
         System.out.println("本次用例执行结果为："+result);
         AddSendResult.addSendResult(result);
     }
 
     @Test
     public void sendSms1() throws Exception{
-        String body = SwitchJson.switchJson("selectcase",1);
+        String body = SwitchJson.switchJson("selectcase",2);
         String result = SmsInterface.sendSmsInterface(body,InterfaceNum.PRO);
         System.out.println(result);
+        AddSendResult.addSendResult(result);
     }
+
 
 }

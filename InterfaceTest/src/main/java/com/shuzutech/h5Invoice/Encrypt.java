@@ -261,7 +261,7 @@ public class Encrypt {
      */
 
     @Test
-    public void makeInvoice() throws SAXException, TransformerException, ParserConfigurationException, IOException {
+    public void makeInvoice() throws IOException {
         String fpqqlsh;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHMMss");
         String date = simpleDateFormat.format(new Date());
@@ -269,7 +269,7 @@ public class Encrypt {
         System.out.println("本次发票请求流水号:"+fpqqlsh);
     	String ff = "UA=Chrome&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
 //        String ff = "UA=Chrome&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=007&shnsrsbh=110101201707010057&operator=操作人&yfpdm=050000000003&yfphm=32226187";
-        String AccessToken = GetAccessToken.getAccessToken(InterfaceName.TEST);
+        String AccessToken = GetAccessToken.getAccessToken(InterfaceName.PRO);
 
     	String ecoderResult=null;
         try {
@@ -278,7 +278,7 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=253478c77363a9156e3e633bcb76dc1e&encryptMsg=";
+        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);
@@ -288,9 +288,9 @@ public class Encrypt {
      * H5开票配置页面
      */
     @Test
-    public void invoiceConfig() throws SAXException, TransformerException, ParserConfigurationException, IOException {
+    public void invoiceConfig() throws IOException {
         String  ic = "UA=Chrome&shnsrsbh=110101201707010057";
-        String accessToken = GetAccessToken.getAccessToken(InterfaceName.TEST);
+        String accessToken = GetAccessToken.getAccessToken(InterfaceName.PRO);
         String ecoderResult=null;
         try {
             ecoderResult = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(ic,accessToken).getBytes("utf-8"));
@@ -298,7 +298,7 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=253478c77363a9156e3e633bcb76dc1e&encryptMsg=";
+        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);

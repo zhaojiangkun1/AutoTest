@@ -1,5 +1,5 @@
 package com.shuzutech.config;
 
 public enum InterfaceNum {
-    TEST,PRO,GETRESULT
+    TEST,PRO,GETRESULT,PRONEWREQ,NEWGETRESULT
 }

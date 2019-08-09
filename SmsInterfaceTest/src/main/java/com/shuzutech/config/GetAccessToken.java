@@ -46,13 +46,27 @@ public class GetAccessToken {
 
     }
 
+    public static int judgeEnv(InterfaceNum num){
+        int id=0;
+        if(num == InterfaceNum.PRO||num == InterfaceNum.PRONEWREQ || num == InterfaceNum.NEWGETRESULT
+            || num == InterfaceNum.GETRESULT){
+            id = 1;
+        }
+        else {
+            id =2;
+        }
+        return id;
+
+    }
+
 
     public static String getToken(InterfaceNum name) throws Exception {
 
         String accessToken;
 
         SqlSession session = DataBaseUtil.getSqlSession();
-        SaveToken saveToken = session.selectOne("getToken",1);
+        int id = judgeEnv(name);
+        SaveToken saveToken = session.selectOne("getToken",id);
         SaveToken st = new SaveToken();
         Date oldDate = saveToken.getCurrentTime();
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -65,7 +79,7 @@ public class GetAccessToken {
 
         if(diffSec > 7200){
             accessToken = GetAccessToken.getAccessToken(name);
-            st.setId(1);
+            st.setId(id);
             st.setCurrentTime(endTime);
             st.setAccessToken(accessToken);
             session.update("updateToken",st);

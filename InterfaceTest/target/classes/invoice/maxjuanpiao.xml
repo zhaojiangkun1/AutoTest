@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<business id="FPKJ">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>ZBJ00000000000001</fpqqlsh>
-            <shnsrsbh></shnsrsbh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>98020190808111906</fpqqlsh>
+            <shnsrsbh/>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
             <fplxdm>025</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
             <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
             <ghdwmc>南京数族信息科技有限公司</ghdwmc>
-            <fyxm count="20">
+            <fyxm count="9">
                 <group xh="1">
                     <fphxz>0</fphxz>
                     <spmc>餐饮费用</spmc>
@@ -20,10 +19,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="2">
                     <fphxz>0</fphxz>
@@ -34,10 +33,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="3">
                     <fphxz>0</fphxz>
@@ -48,10 +47,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="4">
                     <fphxz>0</fphxz>
@@ -62,10 +61,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="5">
                     <fphxz>0</fphxz>
@@ -76,10 +75,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="6">
                     <fphxz>0</fphxz>
@@ -90,10 +89,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="7">
                     <fphxz>0</fphxz>
@@ -104,10 +103,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="8">
                     <fphxz>0</fphxz>
@@ -118,10 +117,10 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
                 <group xh="9">
                     <fphxz>0</fphxz>
@@ -132,171 +131,17 @@
                     <sl>0.06</sl>
                     <se>0.18</se>
                     <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
+                    <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="10">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="11">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="12">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="13">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="14">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="15">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="16">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="17">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="18">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="19">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
-                </group>
-                <group xh="20">
-                    <fphxz>0</fphxz>
-                    <spmc>餐饮费用</spmc>
-                    <spsl>1</spsl>
-                    <hsdj>3</hsdj>
-                    <hsje>3</hsje>
-                    <sl>0.06</sl>
-                    <se>0.18</se>
-                    <spbm>3070401000000000000</spbm>
-                    <zxbm></zxbm>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs></lslbs>
-                    <zzstsgl></zzstsgl>
+                    <lslbs/>
+                    <zzstsgl/>
                 </group>
             </fyxm>
             <bz>备注</bz>
             <skr>收款人</skr>
             <kpr>开票人</kpr>
-            <yfpdm></yfpdm>
-            <yfphm></yfphm>
+            <yfpdm/>
+            <yfphm/>
             <sprsjh>zhaokun@shuzutech.com</sprsjh>
         </input>
     </body>

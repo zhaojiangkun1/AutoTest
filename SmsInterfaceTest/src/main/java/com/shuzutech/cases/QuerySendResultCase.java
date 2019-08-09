@@ -10,7 +10,7 @@ public class QuerySendResultCase {
     @Test
     public void querySendSmsResult() throws Exception {
        String sendResult = GetSendResult.getSendResult();
-       String result = SmsInterface.sendSmsInterface(sendResult, InterfaceNum.GETRESULT);
+       String result = SmsInterface.sendSmsInterface(sendResult, InterfaceNum.NEWGETRESULT);
        System.out.println(sendResult);
         System.out.println(result);
     }

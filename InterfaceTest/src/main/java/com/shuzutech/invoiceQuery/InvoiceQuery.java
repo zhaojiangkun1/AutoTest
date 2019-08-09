@@ -11,7 +11,7 @@ public class InvoiceQuery {
 
     @Test()
     public void queryInvoice() throws Exception {
-        new RequestInterface().requestInterface(filePath+"query.xml", InterfaceName.PRO);
+        new RequestInterface().requestInterface(filePath+"query.xml", InterfaceName.TEST);
     }
 
 }
