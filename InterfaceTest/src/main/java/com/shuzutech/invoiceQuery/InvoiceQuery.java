@@ -14,4 +14,14 @@ public class InvoiceQuery {
         new RequestInterface().requestInterface(filePath+"query.xml", InterfaceName.TEST);
     }
 
+    /**
+     * 发票明细查询
+     * @throws Exception
+     */
+
+    @Test
+    public void fpdzcx() throws Exception {
+        new RequestInterface().requestInterface(filePath+"fpdzcx.xml",InterfaceName.PRO);
+    }
+
 }

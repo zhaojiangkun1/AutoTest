@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>22320190702153240</fpqqlsh>
-            <jsbh>500102010000096~~29ff13ece4e497b9b50acf67dd92b764</jsbh>
+            <fpqqlsh>12220190829162958</fpqqlsh>
+            <jsbh>110101201707010057~~499000152456 </jsbh>
             <fplxdm>004</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -21,8 +21,8 @@
                     <spsl>3</spsl>
                     <dj>2.3000</dj>
                     <je>6.90</je>
-                    <sl>0.06</sl>
-                    <se>0.41</se>
+                    <sl>0.03</sl>
+                    <se>0.21</se>
                     <spbm>1010101030000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
@@ -31,16 +31,16 @@
                 </group>
                 <group xh="2">
                     <fphxz>2</fphxz>
-                    <spmc>兰博基尼跑车</spmc>
+                    <spmc>代收民航发展基金</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
                     <spsl/>
                     <dj/>
-                    <je>13560</je>
+                    <je>13</je>
                     <sl>0.13</sl>
-                    <se>1762.8</se>
-                    <spbm>1090305010800000000</spbm>
+                    <se>1.69</se>
+                    <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -48,16 +48,16 @@
                 </group>
                 <group xh="3">
                     <fphxz>1</fphxz>
-                    <spmc>兰博基尼跑车</spmc>
+                    <spmc>代收民航发展基金</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
                     <spsl/>
                     <dj/>
-                    <je>-100</je>
+                    <je>-10</je>
                     <sl>0.13</sl>
-                    <se>-13</se>
-                    <spbm>1090305010800000000</spbm>
+                    <se>-1.3</se>
+                    <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<business id="HZXXBSQ">
+    <body>
+        <input>
+            <jsbh>110101201707010057~~499000152456</jsbh>
+            <sqlsh>201908201620010001</sqlsh>
+            <xhdwsbh>110101201707010057</xhdwsbh>
+            <xhdwmc>云票测试五十七</xhdwmc>
+            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
+            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
+            <sqly>2</sqly>
+            <sqfs>0</sqfs>
+            <zsfs>0</zsfs>
+            <zdbz></zdbz>
+            <fyxm count="1">
+                <group xh="1">
+                    <fphxz>0</fphxz>
+                    <spmc>大米</spmc>
+                    <spsm></spsm>
+                    <ggxh></ggxh>
+                    <dw></dw>
+                    <spsl>3</spsl>
+                    <dj>2.3000</dj>
+                    <je>6.90</je>
+                    <sl>0.06</sl>
+                    <se>0.41</se>
+                    <hsbz>0</hsbz>
+                    <spbm>1010101030000000000</spbm>
+                    <zxbm></zxbm>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs></lslbs>
+                    <zzstsgl></zzstsgl>
+                </group>
+            </fyxm>
+            <hjje>6.9</hjje>
+            <hjse>0.41</hjse>
+            <yfpdm>1500000002</yfpdm>
+            <yfphm>32225129</yfphm>
+        </input>
+    </body>
+</business>

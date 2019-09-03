@@ -13,6 +13,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
@@ -261,15 +262,16 @@ public class Encrypt {
      */
 
     @Test
-    public void makeInvoice() throws IOException {
+    public void makeInvoice() throws Exception {
+        //110101201707010057   110101201707010043
         String fpqqlsh;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHMMss");
         String date = simpleDateFormat.format(new Date());
         fpqqlsh="0101"+date;
         System.out.println("本次发票请求流水号:"+fpqqlsh);
-    	String ff = "UA=Chrome&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
-//        String ff = "UA=Chrome&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=007&shnsrsbh=110101201707010057&operator=操作人&yfpdm=050000000003&yfphm=32226187";
-        String AccessToken = GetAccessToken.getAccessToken(InterfaceName.PRO);
+//    	String ff = "UA=PC&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
+        String ff = "UA=PC&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=025&shnsrsbh=110101201707010057&operator=操作人&yfpdm=150007890501&yfphm=40022137";
+        String AccessToken = GetAccessToken.getToken(InterfaceName.PRO);
 
     	String ecoderResult=null;
         try {
@@ -278,7 +280,8 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";
+        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
+//        String uri = "http://106.14.193.154:8081/invoice/h5/invoice?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);
@@ -288,9 +291,10 @@ public class Encrypt {
      * H5开票配置页面
      */
     @Test
-    public void invoiceConfig() throws IOException {
-        String  ic = "UA=Chrome&shnsrsbh=110101201707010057";
-        String accessToken = GetAccessToken.getAccessToken(InterfaceName.PRO);
+    public void invoiceConfig() throws Exception {
+        //110101201707010043 110101201707010057
+        String  ic = "UA=PC&shnsrsbh=110101201707010057";
+        String accessToken = GetAccessToken.getToken(InterfaceName.PRO);
         String ecoderResult=null;
         try {
             ecoderResult = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(ic,accessToken).getBytes("utf-8"));
@@ -298,9 +302,31 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";
+        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
+//        String uri = "http://106.14.193.154:8081/invoice/h5/config?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";//开发环境
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
+        System.out.println(url);
+    }
+
+    @Test
+    public void invoiceInto() throws Exception {
+        /**
+         * staffMobile 数族平台的业务员手机号
+         * channelId，服务商在数族申请的平台ID，对于新商户需要提供商户所属的服务商
+         * &staffMobile=13599999999
+         * channelId=40
+         */
+        String params = "UA=Chrome&staffMobile=13599999999&companyName=江南1号店081701&contact=18672680518&mobile=18672680618&taxNo=130101201707020041&outMerchantId=201908171104&channelId=40";
+        String accessToken = GetAccessToken.getToken(InterfaceName.DEV);
+
+        String appId = "f07dcd92fce254d4b344cb07dc4901e2";
+        String returnUrl = "http://www.shuzutech.com/";
+//        String encryptMsg = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(params,accessToken).getBytes("utf-8"));
+        String encryptMsg = new Encrypt().aesEncrypt(params, accessToken);
+        String encryptMsg_urlEncode = URLEncoder.encode(encryptMsg);
+        String url = "http://106.14.193.154:8084/third/invoice/registration?appId="+(appId)+"&encryptMsg="+(encryptMsg_urlEncode)+"&returnURL="+(returnUrl);
+
         System.out.println(url);
     }
 }

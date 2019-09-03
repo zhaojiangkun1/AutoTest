@@ -1,28 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
+<?xml version="1.0" encoding="utf-8"?>
+<business id="HZXXBSC">
     <body>
         <input>
-            <fpqqlsh>12220190829162958</fpqqlsh>
-            <jsbh>110101201707010057~~499000152456 </jsbh>
-            <fplxdm>004</fplxdm>
-            <kplx>0</kplx>
-            <yhlx>0</yhlx>
-            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
+            <xxblx>0</xxblx>
+            <yfpdm>1500000002</yfpdm>
+            <yfphm>32225151</yfphm>
+            <szlb>1</szlb>
+            <dslbs>1</dslbs>
+            <tkrq>2019-08-29</tkrq>
             <ghdwmc>南京数族信息科技有限公司</ghdwmc>
-            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
-            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
-            <qdbz>0</qdbz>
-            <fyxm count="8">
+            <ghdwdm>91320191MA1ML4CL25</ghdwdm>
+            <xhdwmc>云票测试五十七</xhdwmc>
+            <xhdwdm>110101201707010057</xhdwdm>
+            <hjje>-69.90</hjje>
+            <zhsl></zhsl>
+            <hjse>-4.2</hjse>
+            <sqsm>0000000100</sqsm>
+            <sqly>0</sqly>
+            <lxdh></lxdh>
+            <hsslbs>0</hsslbs>
+            <bmbbbh></bmbbbh>
+            <kprq>20190829</kprq>
+            <fyxm count="7">
                 <group xh="1">
                     <fphxz>0</fphxz>
                     <spmc>大米</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl>3</spsl>
-                    <dj>2.3000</dj>
-                    <je>6.90</je>
+                    <spsl>-3</spsl>
+                    <dj>2.30</dj>
+                    <je>-6.90</je>
                     <sl>0.03</sl>
-                    <se>0.21</se>
+                    <se>-0.21</se>
+                    <hsbz>N</hsbz>
                     <spbm>1010101030000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
@@ -30,16 +42,17 @@
                     <zzstsgl/>
                 </group>
                 <group xh="2">
-                    <fphxz>2</fphxz>
+                    <fphxz>0</fphxz>
                     <spmc>代收民航发展基金</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
                     <spsl/>
                     <dj/>
-                    <je>13</je>
+                    <je>-3.00</je>
                     <sl>0.13</sl>
-                    <se>1.69</se>
+                    <se>-0.39</se>
+                    <hsbz>N</hsbz>
                     <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
@@ -47,17 +60,18 @@
                     <zzstsgl/>
                 </group>
                 <group xh="3">
-                    <fphxz>1</fphxz>
-                    <spmc>代收民航发展基金</spmc>
+                    <fphxz>0</fphxz>
+                    <spmc>糯米</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl/>
-                    <dj/>
-                    <je>-10</je>
-                    <sl>0.13</sl>
-                    <se>-1.3</se>
-                    <spbm>6130000000000000000</spbm>
+                    <spsl>-3</spsl>
+                    <dj>4</dj>
+                    <je>-12.00</je>
+                    <sl>0.06</sl>
+                    <se>-0.72</se>
+                    <hsbz>N</hsbz>
+                    <spbm>1010101030000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -65,16 +79,17 @@
                 </group>
                 <group xh="4">
                     <fphxz>0</fphxz>
-                    <spmc>糯米</spmc>
+                    <spmc>大麦</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl>3</spsl>
+                    <spsl>-3</spsl>
                     <dj>4</dj>
-                    <je>12</je>
+                    <je>-12.00</je>
                     <sl>0.06</sl>
-                    <se>0.72</se>
-                    <spbm>1010101030000000000</spbm>
+                    <se>-0.72</se>
+                    <hsbz>N</hsbz>
+                    <spbm>1010101060000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -82,16 +97,17 @@
                 </group>
                 <group xh="5">
                     <fphxz>0</fphxz>
-                    <spmc>大麦</spmc>
+                    <spmc>燕麦</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl>3</spsl>
+                    <spsl>-3</spsl>
                     <dj>4</dj>
-                    <je>12</je>
+                    <je>-12.00</je>
                     <sl>0.06</sl>
-                    <se>0.72</se>
-                    <spbm>1010101060000000000</spbm>
+                    <se>-0.72</se>
+                    <hsbz>N</hsbz>
+                    <spbm>1010101070000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -99,16 +115,17 @@
                 </group>
                 <group xh="6">
                     <fphxz>0</fphxz>
-                    <spmc>燕麦</spmc>
+                    <spmc>黑麦</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl>3</spsl>
+                    <spsl>-3</spsl>
                     <dj>4</dj>
-                    <je>12</je>
+                    <je>-12.00</je>
                     <sl>0.06</sl>
-                    <se>0.72</se>
-                    <spbm>1010101070000000000</spbm>
+                    <se>-0.72</se>
+                    <hsbz>N</hsbz>
+                    <spbm>1010101080000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -116,32 +133,16 @@
                 </group>
                 <group xh="7">
                     <fphxz>0</fphxz>
-                    <spmc>黑麦</spmc>
-                    <spsm/>
-                    <ggxh/>
-                    <dw/>
-                    <spsl>3</spsl>
-                    <dj>4</dj>
-                    <je>12</je>
-                    <sl>0.06</sl>
-                    <se>0.72</se>
-                    <spbm>1010101080000000000</spbm>
-                    <zxbm/>
-                    <yhzcbs>0</yhzcbs>
-                    <lslbs/>
-                    <zzstsgl/>
-                </group>
-                <group xh="8">
-                    <fphxz>0</fphxz>
                     <spmc>荞麦</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl>3</spsl>
+                    <spsl>-3</spsl>
                     <dj>4</dj>
-                    <je>12</je>
+                    <je>-12.00</je>
                     <sl>0.06</sl>
-                    <se>0.72</se>
+                    <se>-0.72</se>
+                    <hsbz>N</hsbz>
                     <spbm>1010101090000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
@@ -149,14 +150,6 @@
                     <zzstsgl/>
                 </group>
             </fyxm>
-            <bz/>
-            <skr/>
-            <fhr/>
-            <kpr>admink</kpr>
-            <tzdbh/>
-            <yfpdm/>
-            <yfphm/>
-            <sprsjh/>
         </input>
     </body>
 </business>

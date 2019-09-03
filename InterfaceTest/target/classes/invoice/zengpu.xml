@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>62220190808104515</fpqqlsh>
-            <jsbh>110101201707010043~~A20016420000265</jsbh>
+            <fpqqlsh>87520190820141221</fpqqlsh>
+            <jsbh>110101201707010037~~499000152093</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -21,13 +21,13 @@
                     <spsl>1</spsl>
                     <dj>13560</dj>
                     <je>13560</je>
-                    <sl>0.13</sl>
-                    <se>1762.8</se>
+                    <sl>0.05</sl>
+                    <se>678</se>
                     <spbm>1090305010800000000</spbm>
                     <zxbm/>
-                    <yhzcbs>0</yhzcbs>
+                    <yhzcbs>1</yhzcbs>
                     <lslbs/>
-                    <zzstsgl/>
+                    <zzstsgl>按5%简易征收</zzstsgl>
                 </group>
             </fyxm>
             <bz>备注</bz>
@@ -36,7 +36,7 @@
             <kpr>开票人</kpr>
             <yfpdm/>
             <yfphm/>
-            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+            <sprsjh/>
         </input>
     </body>
 </business>

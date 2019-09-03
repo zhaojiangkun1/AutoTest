@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<business id="HZXXBSC">
+    <body>
+        <input>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
+            <xxblx>0</xxblx>
+            <yfpdm>1500031888</yfpdm>
+            <yfphm>59952032</yfphm>
+            <szlb>1</szlb>
+            <dslbs>0</dslbs>
+            <tkrq>2019-08-29</tkrq>
+            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
+            <ghdwdm>91320191MA1ML4CL25</ghdwdm>
+            <xhdwmc>云票测试四十三</xhdwmc>
+            <xhdwdm>110101201707010043</xhdwdm>
+            <hjje>-2.00</hjje>
+            <zhsl>0.13</zhsl>
+            <hjse>-0.26</hjse>
+            <sqsm>0000000100</sqsm>
+            <sqly>0</sqly>
+            <lxdh></lxdh>
+            <hsslbs>0</hsslbs>
+            <bmbbbh></bmbbbh>
+            <kprq>20190827</kprq>
+            <fyxm count="1">
+                <group xh="1">
+                    <fphxz>0</fphxz>
+                    <spmc>代收民航发展基金</spmc>
+                    <spsm/>
+                    <ggxh/>
+                    <dw/>
+                    <spsl></spsl>
+                    <dj></dj>
+                    <je>-2.00</je>
+                    <sl>0.13</sl>
+                    <se>-0.26</se>
+                    <hsbz>N</hsbz>
+                    <spbm>6130000000000000000</spbm>
+                    <zxbm>01</zxbm>
+                    <yhzcbs>0</yhzcbs>
+                    <lslbs/>
+                    <zzstsgl/>
+                </group>
+            </fyxm>
+        </input>
+    </body>
+</business>

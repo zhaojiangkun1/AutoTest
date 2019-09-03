@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>42320190730174716</fpqqlsh>
-            <shnsrsbh>500102010003543</shnsrsbh>
-            <jsbh>500102010003543~~500102010003543</jsbh>
+            <fpqqlsh>30120190903120407</fpqqlsh>
+            <shnsrsbh>110101201707010057</shnsrsbh>
+            <jsbh/>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>1</yhlx>
@@ -22,8 +22,8 @@
                     <spsl>3</spsl>
                     <dj>2.3</dj>
                     <je>6.90</je>
-                    <sl>0.06</sl>
-                    <se>0.41</se>
+                    <sl>0</sl>
+                    <se>0</se>
                     <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>39720190726134919</fpqqlsh>
+            <fpqqlsh>2120190827155933</fpqqlsh>
             <shnsrsbh>110101201707010057</shnsrsbh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>1</kplx>
             <yhlx>0</yhlx>
             <ghdwsbh/>
-            <ghdwmc>山水话江南</ghdwmc>
+            <ghdwmc>个人</ghdwmc>
             <ghdwdzdh/>
             <ghdwyhzh/>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>稻谷</spmc>
+                    <spmc>代收民航发展基金</spmc>
                     <ggxh/>
                     <dw/>
                     <spsl>-1</spsl>
-                    <dj>0.71</dj>
-                    <je>-0.71</je>
-                    <sl>0.03</sl>
-                    <se>-0.02</se>
-                    <spbm>3070401000000000000</spbm>
+                    <dj>86</dj>
+                    <je>-86</je>
+                    <sl>0</sl>
+                    <se>0</se>
+                    <spbm>6130000000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs/>
+                    <lslbs>3</lslbs>
                     <zzstsgl/>
                 </group>
             </fyxm>
@@ -34,7 +34,7 @@
             <fhr>fhr</fhr>
             <kpr>admin</kpr>
             <yfpdm>152000186357</yfpdm>
-            <yfphm>40023806</yfphm>
+            <yfphm>40023967</yfphm>
             <sprsjh>zhaokun@shuzutech.com</sprsjh>
         </input>
     </body>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>97920190829185141</fpqqlsh>
+            <fpqqlsh>98820190830175326</fpqqlsh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>004</fplxdm>
-            <kplx>0</kplx>
+            <kplx>1</kplx>
             <yhlx>0</yhlx>
             <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
-            <ghdwmc></ghdwmc>
+            <ghdwmc>南京数族信息</ghdwmc>
             <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
             <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
             <qdbz>0</qdbz>
@@ -16,16 +16,16 @@
                     <fphxz>0</fphxz>
                     <spmc>代收民航发展基金</spmc>
                     <spsm/>
-                    <ggxh>中</ggxh>
-                    <dw>份</dw>&gt;
+                    <ggxh/>
+                    <dw/>
                     <spsl/>
                     <dj/>
-                    <je>2</je>
+                    <je>-2</je>
                     <sl>0.13</sl>
-                    <se>0.26</se>
+                    <se>-0.26</se>
                     <spbm>6130000000000000000</spbm>
-                    <zxbm>01</zxbm>&gt;
-                    <yhzcbs/>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
                     <lslbs/>
                     <zzstsgl/>
                 </group>
@@ -34,9 +34,9 @@
             <skr/>
             <fhr/>
             <kpr>admin</kpr>
-            <tzdbh/>
-            <yfpdm/>
-            <yfphm/>
+            <tzdbh>5001021908000466</tzdbh>
+            <yfpdm>1500000002</yfpdm>
+            <yfphm>32225150</yfphm>
             <sprsjh/>
         </input>
     </body>

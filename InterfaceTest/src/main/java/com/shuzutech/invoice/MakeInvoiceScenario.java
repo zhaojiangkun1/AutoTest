@@ -1,13 +1,19 @@
 package com.shuzutech.invoice;
 
 import com.shuzutech.config.InterfaceName;
+import com.shuzutech.config.RequestInterface;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MakeInvoiceScenario {
 
-    String newShnsrsbh="110101201707010043";
-    String newJsbh = "110101201707010043~~A20016420000265";
+    //总部：110101201707010043~~A20016420000265   110101201707010057~~499000152456  110101201707010037~~499000152093
+    // 许继或者广东：554433221100001~~499111004288
+    //宁波：500102010001459  500102010001459~~499000115698
+    //四川：500102010003543~~500102010003543
+
+    String newShnsrsbh="110101201707010037";
+    String newJsbh = "110101201707010037~~499000152093";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;
@@ -23,7 +29,7 @@ public class MakeInvoiceScenario {
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         UpdateGroup.updateGroup(file,"1","86","86","0","0");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file, InterfaceName.TEST);
+        int code = mi.makeInvoice(file, InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -113,11 +119,11 @@ public class MakeInvoiceScenario {
         // 许继或者广东：554433221100001~~499111004288
         //宁波：500102010001459  500102010001459~~499000115698
         //四川：500102010003543~~500102010003543
-        String newShnsrsbh="500102010003543";
-        String newJsbh = "500102010003543~~500102010003543";
+        String newShnsrsbh="110101201707010057";
+        String newJsbh = "";
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -130,8 +136,8 @@ public class MakeInvoiceScenario {
     public void makeFuShuInvoice() throws Exception {
         String fileName = "fushufapiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(filePath+fileName,newShnsrsbh,newJsbh);
-        UpdateGroup.updateGroup(filePath+fileName,"-1","0.71","-0.71","0.03","-0.02");
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
+        UpdateGroup.updateGroup(filePath+fileName,"-1","86","-86","0","0");
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
         Assert.assertEquals(code,0);
     }
 
@@ -163,7 +169,7 @@ public class MakeInvoiceScenario {
     public void makePuInvoice() throws Exception {
         String fileName = "zengpu.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -252,6 +258,7 @@ public class MakeInvoiceScenario {
         Assert.assertEquals(code,0);
     }
 
+
     /**
      * 专票最多开8行，不带清单
      * @throws Exception
@@ -260,6 +267,21 @@ public class MakeInvoiceScenario {
     @Test
     public void discountZhuanInvoice() throws Exception {
         String fileName = "discountZhuanPiao.xml";
+        System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        Assert.assertEquals(code,0);
+    }
+    @Test
+    public void twoZhuanPiao() throws Exception {
+        String fileName = "twospzhuanpiao.xml";
+        System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        Assert.assertEquals(code,0);
+    }
+
+    @Test
+    public void oneDiscountZhuanPiao() throws Exception {
+        String fileName = "onespdiscountzhuanpiao.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
         int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
         Assert.assertEquals(code,0);

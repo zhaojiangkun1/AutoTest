@@ -35,7 +35,7 @@ public class QueryInvoiceStatistical {
     @Test(groups = {"统计电子票"})
     public void statisicalEleInvoice() throws Exception {
         UpdateFplxdm(file,"026");
-        new RequestInterface().requestInterface(file, InterfaceName.TEST);
+        new RequestInterface().requestInterface(file, InterfaceName.PRO);
     }
     //查找专票统计
     @Test(groups = {"统计专票"})

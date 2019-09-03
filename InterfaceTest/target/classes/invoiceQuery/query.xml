@@ -3,10 +3,11 @@
 <business id="FPCX">
     <body>
         <input>
-            <jsbh>110101201707010043~~499000152157</jsbh>
-            <fplxdm>025</fplxdm>
+            <jsbh>110101201707010043~~A20016420000265</jsbh>
+            <nsrsbh></nsrsbh>
+            <fplxdm>004</fplxdm>
             <cxfs>1</cxfs>
-            <cxtj>98020190808111906</cxtj>
+            <cxtj>80820190827172604</cxtj>
         </input>
     </body>
 </business>
