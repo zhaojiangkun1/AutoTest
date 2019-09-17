@@ -22,6 +22,7 @@ public class MakeInvoiceInterface {
         SimpleDateFormat sd=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String date = sd.format(new Date());
 
+
         String url = ConfigFile.postUrl(name);
         System.out.println("请求的url:"+url);
         String appId = ConfigFile.getAppid(name);

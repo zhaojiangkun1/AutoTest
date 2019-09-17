@@ -22,9 +22,11 @@ public class NbInterface {
 //        String xml = "xml=<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"TJCX\"><body><input><jsbh>91320191MA1ML4CL25~~661826092245</jsbh><kprqStart>20190601</kprqStart><kprqEnd>20190906</kprqEnd></input></body></business>";
         //金税盘设备查询接口：
 //        String body;
-        String xml = "xml=<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"CXSBXX\"><body><input><sh>91320191MA1ML4CL25</sh></input></body></business>";
+//        String xml = "xml=<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"CXSBXX\"><body><input><sh>91320191MA1ML4CL25</sh></input></body></business>";
         //当前未开票号码查询
 //        String xml = "xml=<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"GPXXCX\"><body><input><jsbh>91320191MA1ML4CL25~~661826092245</jsbh><fplxdm>007</fplxdm><sblx>2</sblx><fpzt>1</fpzt><nsrsbh>91320191MA1ML4CL25</nsrsbh><qtzd>661826092245</qtzd><lgqxx></lgqxx></input></body></business>";
+        //宁波的发票打印接口
+        String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"PRINTDATA\"><body><input><jsbh>91320191MA1ML4CL25~~661826092245</jsbh><fplxdm>007</fplxdm><cxfs>0</cxfs><cxtj>032001800304~24283394</cxtj><left>25</left><top>40</top></input></body></business>";
 
         //企业信息查询接口
 //        String xml = "xml=<?xml version=\"1.0\" encoding=\"utf-8\"?><business id=\"QYXXCX\"><body><input><jsbh>91320191MA1ML4CL25~~661826092245</jsbh></input></body></business>";

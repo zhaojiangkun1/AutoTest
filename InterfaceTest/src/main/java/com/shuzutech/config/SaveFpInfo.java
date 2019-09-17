@@ -6,6 +6,7 @@ import java.util.Date;
 
 @Data
 public class SaveFpInfo {
+    private int id;
     private String fpqqlsh;
     private String fplxdm;
     private String nsrsbh;

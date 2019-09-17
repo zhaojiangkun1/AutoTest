@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>98020190808111906</fpqqlsh>
+            <fpqqlsh>55620190917150203</fpqqlsh>
             <shnsrsbh/>
-            <jsbh>110101201707010043~~A20016420000265</jsbh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>025</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -138,6 +138,7 @@
                 </group>
             </fyxm>
             <bz>备注</bz>
+            <extParam>storeId=1001682,operatorId=1000214</extParam>
             <skr>收款人</skr>
             <kpr>开票人</kpr>
             <yfpdm/>

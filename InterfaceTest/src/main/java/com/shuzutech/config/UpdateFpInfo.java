@@ -27,6 +27,7 @@ public class UpdateFpInfo {
         NodeList fplxdmElement = inputElement.getElementsByTagName("fplxdm");
         String fplxdm = fplxdmElement.item(0).getTextContent();
         String nsrsbh="";
+        int id = GetSaveFpInfo.getSaveFpInfo()+1;
         if (fplxdm.equals("026")){
             NodeList nsrsbhElement = inputElement.getElementsByTagName("shnsrsbh");
             nsrsbh = nsrsbhElement.item(0).getTextContent();
@@ -38,6 +39,7 @@ public class UpdateFpInfo {
 
         SqlSession session = DataBaseUtil.getSqlSession();
         SaveFpInfo saveFpInfo = new SaveFpInfo();
+        saveFpInfo.setId(id);
         saveFpInfo.setFpqqlsh(fpqqlsh);
         saveFpInfo.setFplxdm(fplxdm);
         saveFpInfo.setNsrsbh(nsrsbh);

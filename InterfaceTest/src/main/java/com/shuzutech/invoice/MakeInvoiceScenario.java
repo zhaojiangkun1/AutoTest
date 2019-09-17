@@ -57,7 +57,7 @@ public class MakeInvoiceScenario {
     public void normalRate2() throws Exception {
         UpdateGroup.updateGroup(file,"1","20","20","0.16","3.20");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -158,7 +158,7 @@ public class MakeInvoiceScenario {
     @Test(groups = {"多行卷票"})
     public void makeDuohangJuanPiao() throws Exception {
         String fileName = "maxjuanpiao.xml";
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -171,7 +171,7 @@ public class MakeInvoiceScenario {
     public void makePuInvoice() throws Exception {
         String fileName = "zengpu.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
+        new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
     }
 
     /**

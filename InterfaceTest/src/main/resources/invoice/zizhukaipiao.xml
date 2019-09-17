@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>94520190916142129</fpqqlsh>
+            <fpqqlsh>6220190917161226</fpqqlsh>
             <shnsrsbh>500102010003543</shnsrsbh>
             <jsbh>500102010003543~~500102010003543</jsbh>
             <fplxdm>026</fplxdm>
@@ -32,6 +32,7 @@
                 </group>
             </fyxm>
             <bz/>
+            <extParam>storeId=1001682,operatorId=1000214</extParam>
             <title_type/>
             <skr>管理员</skr>
             <fhr>管理员</fhr>
