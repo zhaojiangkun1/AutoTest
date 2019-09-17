@@ -8,6 +8,6 @@ import java.util.Date;
 @Data
 public class SaveToken {
     private int id;
-    private Date currentTime;
     private String accessToken;
+    private Date currentTime;
 }

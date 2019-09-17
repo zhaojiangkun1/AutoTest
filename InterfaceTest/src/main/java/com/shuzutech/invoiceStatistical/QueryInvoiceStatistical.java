@@ -17,7 +17,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-import java.text.ParseException;
 
 public class QueryInvoiceStatistical {
     //设置日期格式
@@ -41,19 +40,19 @@ public class QueryInvoiceStatistical {
     @Test(groups = {"统计专票"})
     public void statisicalZhuanInvoice() throws Exception{
         UpdateFplxdm(file,"004");
-        new RequestInterface().requestInterface(file,InterfaceName.TEST);
+        new RequestInterface().requestInterface(file,InterfaceName.DEV);
     }
 
     @Test(groups = {"统计卷票"})
     public void statisicalJuanInvoice() throws Exception {
         UpdateFplxdm(file,"025");
-        new RequestInterface().requestInterface(file,InterfaceName.TEST);
+        new RequestInterface().requestInterface(file,InterfaceName.DEV);
     }
 
     @Test(groups = {"统计普票"})
     public void statisicalPuInvoice() throws Exception {
         UpdateFplxdm(file,"007");
-        new RequestInterface().requestInterface(file,InterfaceName.TEST);
+        new RequestInterface().requestInterface(file,InterfaceName.DEV);
     }
 
     public void UpdateFplxdm(String fileName,String fplxdm) throws ParserConfigurationException, IOException, SAXException, TransformerException {

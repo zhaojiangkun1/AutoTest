@@ -3,10 +3,11 @@ package com.shuzutech.config;
 
 import org.apache.http.Consts;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -41,7 +42,7 @@ public class GetAccessToken {
         System.out.println("Get请求中的params:"+params);
 
         //创建HttpGet请求
-        DefaultHttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         HttpGet httpGet = new HttpGet(getUrl+"?"+params);
         //执行httpGet
         HttpResponse response = client.execute(httpGet);

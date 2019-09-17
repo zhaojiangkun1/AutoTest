@@ -16,6 +16,6 @@ public class TerminalQuery {
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\goodsEncoding\\";
     @Test
     public void termianlQuery() throws Exception {
-       new RequestInterface().requestInterface(filePath+"terminalQuery.xml", InterfaceName.DEV);
+       new RequestInterface().requestInterface(filePath+"terminalQuery.xml", InterfaceName.PRO);
     }
 }

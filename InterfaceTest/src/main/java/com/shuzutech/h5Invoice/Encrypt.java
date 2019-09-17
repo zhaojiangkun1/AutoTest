@@ -1,5 +1,6 @@
 package com.shuzutech.h5Invoice;
 
+import com.shuzutech.config.ConfigFile;
 import com.shuzutech.config.GetAccessToken;
 import com.shuzutech.config.InterfaceName;
 import org.apache.commons.codec.binary.Base64;
@@ -269,9 +270,9 @@ public class Encrypt {
         String date = simpleDateFormat.format(new Date());
         fpqqlsh="0101"+date;
         System.out.println("本次发票请求流水号:"+fpqqlsh);
-//    	String ff = "UA=PC&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
-        String ff = "UA=PC&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=025&shnsrsbh=110101201707010057&operator=操作人&yfpdm=150007890501&yfphm=40022137";
-        String AccessToken = GetAccessToken.getToken(InterfaceName.PRO);
+    	String ff = "UA=PC&"+"fpqqlsh="+fpqqlsh+"&kplx=0&fplxdm=026&shnsrsbh=110101201707010057&operator=操作人";
+//        String ff = "UA=PC&fpqqlsh="+fpqqlsh+"&kplx=1&fplxdm=025&shnsrsbh=110101201707010057&operator=操作人&yfpdm=150007890501&yfphm=40022137";
+        String AccessToken = GetAccessToken.getToken(InterfaceName.DEV);
 
     	String ecoderResult=null;
         try {
@@ -280,8 +281,8 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
-//        String uri = "http://106.14.193.154:8081/invoice/h5/invoice?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";
+//        String uri = "https://paymgmt.shuzutech.com/invoice/h5/invoice?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
+        String uri = "http://106.14.193.154:8081/invoice/h5/invoice?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);
@@ -294,7 +295,7 @@ public class Encrypt {
     public void invoiceConfig() throws Exception {
         //110101201707010043 110101201707010057
         String  ic = "UA=PC&shnsrsbh=110101201707010057";
-        String accessToken = GetAccessToken.getToken(InterfaceName.PRO);
+        String accessToken = GetAccessToken.getToken(InterfaceName.DEV);
         String ecoderResult=null;
         try {
             ecoderResult = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(ic,accessToken).getBytes("utf-8"));
@@ -302,8 +303,8 @@ public class Encrypt {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
-//        String uri = "http://106.14.193.154:8081/invoice/h5/config?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";//开发环境
+//        String uri = "https://paymgmt.shuzutech.com/invoice/h5/config?appId=947647bad42f485e3f5e9605ce4cadcf&encryptMsg=";//现网环境
+        String uri = "http://106.14.193.154:8081/invoice/h5/config?appId=f07dcd92fce254d4b344cb07dc4901e2&encryptMsg=";//开发环境
         String returnUri= "&returnURL=http://www.shuzutech.com/";
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);
@@ -324,9 +325,30 @@ public class Encrypt {
         String returnUrl = "http://www.shuzutech.com/";
 //        String encryptMsg = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(params,accessToken).getBytes("utf-8"));
         String encryptMsg = new Encrypt().aesEncrypt(params, accessToken);
-        String encryptMsg_urlEncode = URLEncoder.encode(encryptMsg);
-        String url = "http://106.14.193.154:8084/third/invoice/registration?appId="+(appId)+"&encryptMsg="+(encryptMsg_urlEncode)+"&returnURL="+(returnUrl);
+        //URLEncoder.encode()不指定编码得方法已经过时，现在使用如下方法
+        String encryptMsg_urlEncode = URLEncoder.encode(encryptMsg,"UTF-8");
+        String url = "http://106.14.193.154:8081/third/invoice/registration?appId="+(appId)+"&encryptMsg="+(encryptMsg_urlEncode)+"&returnURL="+(returnUrl);
 
+        System.out.println(url);
+    }
+
+    @Test
+    public void makeInvoiceSelfInspection() throws Exception {
+        //110101201707010043(110101201707010043~~499000152157)  110101201707010057(110101201707010057~~499000152456)  110101201707010037  554433221100001(广东)、500102010001448
+        String params = "UA=Chrome&shnsrsbh=110101201707010057&jsbh=110101201707010057~~499000152456";
+        String accessToken = GetAccessToken.getToken(InterfaceName.PRO);
+        String appid = ConfigFile.getAppid(InterfaceName.PRO);
+        String ecoderResult=null;
+        try {
+            ecoderResult = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(params,accessToken).getBytes("utf-8"));
+            System.out.println("加密后的数据为:"+ ecoderResult);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+//        String uri = "http://106.14.193.154:8081/invoice/h5/self_test?appId="+appid+"&encryptMsg=";//开发环境
+        String uri = "https://paymgmt.shuzutech.com/invoice/h5/self_test?appId="+appid+"&encryptMsg=";
+        String returnUri= "&returnURL=http://www.shuzutech.com/";
+        String url = uri + ecoderResult +returnUri;
         System.out.println(url);
     }
 }

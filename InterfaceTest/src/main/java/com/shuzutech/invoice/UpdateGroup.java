@@ -48,14 +48,14 @@ public class UpdateGroup {
         slList.item(0).setTextContent(sl);
         seList.item(0).setTextContent(se);
 
-        //判断，如果税率sl不等于0，则lslbs必须为空
-        NodeList lslbsList = groupElement.getElementsByTagName("lslbs");
-        double slCast = Double.valueOf(sl);
-        if(slCast != 0){
-            lslbsList.item(0).setTextContent("");
-        }else{
-            lslbsList.item(0).setTextContent("3");
-        }
+//        //判断，如果税率sl不等于0，则lslbs必须为空
+//        NodeList lslbsList = groupElement.getElementsByTagName("lslbs");
+//        double slCast = Double.valueOf(sl);
+//        if(slCast != 0){
+//            lslbsList.item(0).setTextContent("");
+//        }else{
+//            lslbsList.item(0).setTextContent("3");
+//        }
 
         //修改后的数据写入文件
         Transformer transformer = TransformerFactory.newInstance().newTransformer();

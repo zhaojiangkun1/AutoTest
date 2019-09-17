@@ -3,9 +3,10 @@ package com.shuzutech.smartPrint;
 
 import com.shuzutech.config.*;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -42,7 +43,7 @@ public class FpdyDataRequestInterface {
         System.out.println("本次请求的accessToken:"+access_token);
         String headerContent = body + date + access_token;
         String s = Md5.EncoderByMd5(headerContent);
-        DefaultHttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
         //添加Body信息
         StringEntity entity = new StringEntity(body,"utf-8");

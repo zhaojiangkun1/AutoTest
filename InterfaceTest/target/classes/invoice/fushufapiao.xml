@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>2120190827155933</fpqqlsh>
-            <shnsrsbh>110101201707010057</shnsrsbh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>97320190910183029</fpqqlsh>
+            <shnsrsbh>91320191MA1ML4CL25</shnsrsbh>
+            <jsbh>91320191MA1ML4CL25~~661826092245</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>1</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh/>
-            <ghdwmc>个人</ghdwmc>
-            <ghdwdzdh/>
-            <ghdwyhzh/>
+            <ghdwsbh>91310114MA1GU3NU72</ghdwsbh>
+            <ghdwmc>上海融族网络科技有限公司</ghdwmc>
+            <ghdwdzdh>上海市浦东新区康威路1500号3幢1层103室02158958286</ghdwdzdh>
+            <ghdwyhzh>中国建设银行股份有限公司上海张江支行31050161393600001918</ghdwyhzh>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>代收民航发展基金</spmc>
-                    <ggxh/>
-                    <dw/>
+                    <spmc>智能销售点终端</spmc>
+                    <ggxh>W6900</ggxh>
+                    <dw>套</dw>
                     <spsl>-1</spsl>
-                    <dj>86</dj>
-                    <je>-86</je>
-                    <sl>0</sl>
-                    <se>0</se>
-                    <spbm>6130000000000000000</spbm>
+                    <dj>618.5840707</dj>
+                    <je>-618.58</je>
+                    <sl>0.13</sl>
+                    <se>-80.42</se>
+                    <spbm>1090505010000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
-                    <lslbs>3</lslbs>
+                    <lslbs/>
                     <zzstsgl/>
                 </group>
             </fyxm>
             <bz/>
-            <skr>skr</skr>
-            <fhr>fhr</fhr>
-            <kpr>admin</kpr>
-            <yfpdm>152000186357</yfpdm>
-            <yfphm>40023967</yfphm>
-            <sprsjh>zhaokun@shuzutech.com</sprsjh>
+            <skr/>
+            <fhr/>
+            <kpr>管理员</kpr>
+            <yfpdm>032001700311</yfpdm>
+            <yfphm>15437605</yfphm>
+            <sprsjh>15895988739</sprsjh>
         </input>
     </body>
 </business>

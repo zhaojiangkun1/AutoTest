@@ -12,5 +12,8 @@
         update saveToken set currentTime = #{currentTime},
         accessToken = #{accessToken} where id = #{id};
     </update>
+    <insert id="insertFpInfo" parameterType="com.shuzutech.config.SaveFpInfo">
+        insert into savefpinfo(fpqqlsh,fplxdm,nsrsbh,updateTime) values (#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime})
+    </insert>
 
 </mapper>

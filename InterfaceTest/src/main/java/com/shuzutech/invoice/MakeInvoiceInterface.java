@@ -5,7 +5,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
 import java.text.SimpleDateFormat;
@@ -28,16 +28,16 @@ public class MakeInvoiceInterface {
 
         new UpdateFpqqlsh().updateFppqqlsh(fileName);
         String body = new ReadFile().readFile(fileName);
+        UpdateFpInfo.updateFpInfo(fileName,new Date());
 
         accessToken = GetAccessToken.getToken(name);
-
         System.out.println("本次请求的accessToken:"+accessToken);
 
         String md5Content = Md5.EncoderByMd5(body+date+accessToken);
         System.out.println("加密后的文件为:" + md5Content);
 
         //模拟HttpPost请求
-        HttpClient client = new DefaultHttpClient();
+        HttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
 
         //添加请求Body

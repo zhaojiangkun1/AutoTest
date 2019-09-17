@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>87520190820141221</fpqqlsh>
-            <jsbh>110101201707010037~~499000152093</jsbh>
+            <fpqqlsh>1920190916102506</fpqqlsh>
+            <jsbh>91320191MA1ML4CL25~~661826092245</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
-            <ghdwmc>南京数族信息科技有限公司</ghdwmc>
-            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
-            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <ghdwsbh>91310114MA1GU3NU72</ghdwsbh>
+            <ghdwmc>上海融族网络科技有限公司</ghdwmc>
+            <ghdwdzdh>上海市浦东新区康威路1500号3幢1层103室02158958286</ghdwdzdh>
+            <ghdwyhzh>中国建设银行股份有限公司上海张江支行31050161393600001918</ghdwyhzh>
             <qdbz>0</qdbz>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>兰博基尼跑车</spmc>
+                    <spmc>智能销售点终端</spmc>
                     <spsm/>
-                    <ggxh/>
-                    <dw/>
+                    <ggxh>W6900</ggxh>
+                    <dw>套</dw>
                     <spsl>1</spsl>
-                    <dj>13560</dj>
-                    <je>13560</je>
-                    <sl>0.05</sl>
-                    <se>678</se>
-                    <spbm>1090305010800000000</spbm>
+                    <dj>618.5840707</dj>
+                    <je>618.58</je>
+                    <sl>0.13</sl>
+                    <se>80.42</se>
+                    <spbm>1090505010000000000</spbm>
                     <zxbm/>
-                    <yhzcbs>1</yhzcbs>
+                    <yhzcbs>0</yhzcbs>
                     <lslbs/>
-                    <zzstsgl>按5%简易征收</zzstsgl>
+                    <zzstsgl/>
                 </group>
             </fyxm>
-            <bz>备注</bz>
-            <skr>收款人</skr>
-            <fhr>复核人</fhr>
-            <kpr>开票人</kpr>
+            <bz/>
+            <skr/>
+            <fhr/>
+            <kpr>管理员</kpr>
             <yfpdm/>
             <yfphm/>
             <sprsjh/>

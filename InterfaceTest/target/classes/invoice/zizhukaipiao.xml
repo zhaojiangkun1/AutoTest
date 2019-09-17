@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>31420190902165941</fpqqlsh>
-            <shnsrsbh>110101201707010057</shnsrsbh>
-            <jsbh/>
+            <fpqqlsh>94520190916142129</fpqqlsh>
+            <shnsrsbh>500102010003543</shnsrsbh>
+            <jsbh>500102010003543~~500102010003543</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>1</yhlx>
@@ -11,31 +11,31 @@
             <ghdwmc/>
             <ghdwdzdh/>
             <ghdwyhzh/>
-            <xhdwdzdh>南京市雨花台区软件大道66号，华通科技园</xhdwdzdh>
-            <xhdwyhzh>招商银行鼓楼分行10107501040008320</xhdwyhzh>
+            <xhdwdzd/>
+            <xhdwyhzh/>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>面条</spmc>
-                    <ggxh/>
-                    <dw/>
-                    <spsl>3</spsl>
-                    <dj>2.3</dj>
-                    <je>6.90</je>
-                    <sl>0</sl>
-                    <se>0</se>
-                    <spbm>3070401000000000000</spbm>
+                    <spmc>智能销售点终端</spmc>
+                    <ggxh>W6900</ggxh>
+                    <dw>套</dw>
+                    <spsl>1</spsl>
+                    <dj>618.58407071</dj>
+                    <je>618.58</je>
+                    <sl>0.13</sl>
+                    <se>80.42</se>
+                    <spbm>1090505010000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
                     <zzstsgl/>
                 </group>
             </fyxm>
+            <bz/>
             <title_type/>
-            <bz>beizhu</bz>
-            <skr>管理员3</skr>
-            <fhr>管理员4</fhr>
-            <kpr>管理员2</kpr>
+            <skr>管理员</skr>
+            <fhr>管理员</fhr>
+            <kpr>管理员</kpr>
             <yfpdm/>
             <yfphm/>
             <sprsjh/>

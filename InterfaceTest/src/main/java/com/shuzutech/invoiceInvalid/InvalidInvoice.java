@@ -24,6 +24,6 @@ public class InvalidInvoice {
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invalidInvoice\\";
     @Test
     public void invalidInvoice() throws Exception {
-        new RequestInterface().requestInterface(filePath+"invalidInvoice.xml", InterfaceName.TEST);
+        new RequestInterface().requestInterface(filePath+"invalidInvoice.xml", InterfaceName.PRO);
     }
 }

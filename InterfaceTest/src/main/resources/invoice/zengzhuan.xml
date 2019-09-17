@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>97920190829185141</fpqqlsh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>98620190916171214</fpqqlsh>
+            <jsbh>91320191MA1ML4CL25~~661826092245</jsbh>
             <fplxdm>004</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
-            <ghdwmc></ghdwmc>
-            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
-            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <ghdwsbh>9111010879851136XP</ghdwsbh>
+            <ghdwmc>北京百旺金赋科技有限公司</ghdwmc>
+            <ghdwdzdh>北京市海淀区丰秀中路3号院12号楼3层101-3 010-52279599</ghdwdzdh>
+            <ghdwyhzh>工行北京知春路支行0200207909200025979</ghdwyhzh>
             <qdbz>0</qdbz>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>代收民航发展基金</spmc>
+                    <spmc>技术服务费</spmc>
                     <spsm/>
-                    <ggxh>中</ggxh>
-                    <dw>份</dw>&gt;
-                    <spsl/>
-                    <dj/>
-                    <je>2</je>
-                    <sl>0.13</sl>
-                    <se>0.26</se>
-                    <spbm>6130000000000000000</spbm>
-                    <zxbm>01</zxbm>&gt;
+                    <ggxh/>
+                    <dw/>
+                    <spsl>1</spsl>
+                    <dj>94339.622641509</dj>
+                    <je>94339.62</je>
+                    <sl>0.06</sl>
+                    <se>5660.38</se>
+                    <spbm>3040205000000000000</spbm>
+                    <zxbm/>&gt;
                     <yhzcbs/>
                     <lslbs/>
                     <zzstsgl/>
                 </group>
             </fyxm>
             <bz/>
-            <skr/>
+            <skr>管理员</skr>
             <fhr/>
-            <kpr>admin</kpr>
+            <kpr>管理员</kpr>
             <tzdbh/>
             <yfpdm/>
             <yfphm/>

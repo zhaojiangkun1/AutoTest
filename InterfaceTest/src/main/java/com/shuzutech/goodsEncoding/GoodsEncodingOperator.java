@@ -52,7 +52,7 @@ public class GoodsEncodingOperator {
     @Test
     public void getGoodsList() throws Exception {
         String file = "getgoodslist.xml";
-        new RequestInterface().requestInterface(filePath+file,InterfaceName.TEST);
+        new RequestInterface().requestInterface(filePath+file,InterfaceName.PRO);
     }
     @Test
     public void getSpbm() throws Exception{

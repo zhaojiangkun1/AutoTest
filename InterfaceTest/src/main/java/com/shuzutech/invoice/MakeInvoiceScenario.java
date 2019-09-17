@@ -11,9 +11,10 @@ public class MakeInvoiceScenario {
     // 许继或者广东：554433221100001~~499111004288
     //宁波：500102010001459  500102010001459~~499000115698
     //四川：500102010003543~~500102010003543
+    //91320191MA1ML4CL25////91320191MA1ML4CL25~~005056C00001
 
-    String newShnsrsbh="110101201707010037";
-    String newJsbh = "110101201707010037~~499000152093";
+    String newShnsrsbh="110101201707010057";
+    String newJsbh = "110101201707010057~~499000152456";
     String filePath = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\";
     String fileName = "makeInvoice.xml";
     String file = filePath + fileName;
@@ -29,7 +30,7 @@ public class MakeInvoiceScenario {
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         UpdateGroup.updateGroup(file,"1","86","86","0","0");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file, InterfaceName.PRO);
+        int code = mi.makeInvoice(file, InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -43,7 +44,7 @@ public class MakeInvoiceScenario {
     public void normalRate1() throws Exception {
         UpdateGroup.updateGroup(file,"3.6","6.10","21.96","0.06","1.32");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.PRO);
+        int code = mi.makeInvoice(file,InterfaceName.DEV);
         Assert.assertEquals(code,0);
 
     }
@@ -67,9 +68,10 @@ public class MakeInvoiceScenario {
 
     @Test(priority = 2,groups = {"正常税率开票"} )
     public void onlyJeAndSl() throws Exception {
-        UpdateGroup.updateGroup(file,"","","21.96","0.13","2.85");
+        UpdateGroup.updateGroup(file,"1","618.58407071","618.58","0.13","80.42");
+        new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -119,8 +121,8 @@ public class MakeInvoiceScenario {
         // 许继或者广东：554433221100001~~499111004288
         //宁波：500102010001459  500102010001459~~499000115698
         //四川：500102010003543~~500102010003543
-        String newShnsrsbh="110101201707010057";
-        String newJsbh = "";
+        String newShnsrsbh="500102010003543";
+        String newJsbh = "500102010003543~~500102010003543";
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         int code = mi.makeInvoice(file,InterfaceName.DEV);
@@ -136,8 +138,8 @@ public class MakeInvoiceScenario {
     public void makeFuShuInvoice() throws Exception {
         String fileName = "fushufapiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(filePath+fileName,newShnsrsbh,newJsbh);
-        UpdateGroup.updateGroup(filePath+fileName,"-1","86","-86","0","0");
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+//        UpdateGroup.updateGroup(filePath+fileName,"-1","86","-86","0","0");
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -169,8 +171,7 @@ public class MakeInvoiceScenario {
     public void makePuInvoice() throws Exception {
         String fileName = "zengpu.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
-        Assert.assertEquals(code,0);
+        new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
     }
 
     /**
@@ -193,7 +194,7 @@ public class MakeInvoiceScenario {
     public void duohangPupiao() throws Exception {
         String fileName = "duohangPupiao.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -241,7 +242,7 @@ public class MakeInvoiceScenario {
     @Test
     public void puInvoiceChongHong() throws Exception {
         String fileName = "pupiaochonghong.xml";
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -254,7 +255,7 @@ public class MakeInvoiceScenario {
     public void makeZhuanInvoice() throws Exception {
         String fileName = "zengzhuan.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
