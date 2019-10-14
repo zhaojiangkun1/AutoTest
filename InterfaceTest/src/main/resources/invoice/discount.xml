@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><business id="FPKJ">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>8020190729174357</fpqqlsh>
-            <shnsrsbh>110101201707010057</shnsrsbh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>20420190924172544</fpqqlsh>
+            <shnsrsbh>110101201601010075</shnsrsbh>
+            <jsbh/>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -14,7 +14,7 @@
             <fyxm count="2">
                 <group xh="1">
                     <fphxz>2</fphxz>
-                    <spmc>餐饮费用*兰州拉面</spmc>
+                    <spmc>兰州拉面</spmc>
                     <ggxh/>
                     <dw/>
                     <spsl>3.6</spsl>
@@ -30,7 +30,7 @@
                 </group>
                 <group xh="2">
                     <fphxz>1</fphxz>
-                    <spmc>餐饮费用*兰州拉面</spmc>
+                    <spmc>兰州拉面</spmc>
                     <ggxh/>
                     <dw/>
                     <spsl/>

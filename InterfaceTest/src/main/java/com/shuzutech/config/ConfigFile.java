@@ -10,30 +10,6 @@ public class ConfigFile {
     private static ResourceBundle bundle = ResourceBundle.getBundle("config.application", Locale.CHINA);
     public static SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    public static String getUrl(InterfaceName name){
-        String url="";
-        String getUri=bundle.getString("getUri");
-
-
-        if(name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
-            String address = bundle.getString("devUrl");
-            url = address + getUri;
-
-        }
-
-        if (name == InterfaceName.TEST || name == InterfaceName.SHANGHUTEST){
-            String address = bundle.getString("testUrl");
-            url = address + getUri;
-        }
-
-        if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
-            String address = bundle.getString("proUrl");
-            url = address + getUri;
-        }
-
-        return url;
-    }
-
     public static String postUrl(InterfaceName name){
         String postUri = bundle.getString("postUri");
         String url="";
@@ -87,24 +63,6 @@ public class ConfigFile {
             appid = bundle.getString("testAppid");
         }
         return appid;
-    }
-
-    public static String getAppSecret(InterfaceName name){
-        String appSecret = "";
-        if (name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
-            appSecret = bundle.getString("devAppSecret");
-        }
-        if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
-            appSecret = bundle.getString("proAppSecret");
-        }
-        if (name == InterfaceName.TEST){
-            appSecret = bundle.getString("testAppSecret");
-        }
-        if (name == InterfaceName.SHANGHUTEST){
-            appSecret = bundle.getString("testAppSecret");
-        }
-
-        return appSecret;
     }
 
 }

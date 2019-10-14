@@ -9,9 +9,9 @@ public class MakeInvoiceScenario {
 
     //总部：110101201707010043~~A20016420000265   110101201707010057~~499000152456  110101201707010037~~499000152093
     // 许继或者广东：554433221100001~~499111004288
-    //宁波：500102010001459  500102010001459~~499000115698
+    //宁波：500102010001459  500102010001459~~499000115698   500102010000097~~539900210230
     //四川：500102010003543~~500102010003543
-    //91320191MA1ML4CL25////91320191MA1ML4CL25~~005056C00001
+    //91320191MA1ML4CL25////91320191MA1ML4CL25~~005056C00001  110101201707010037~~A10016420000196
 
     String newShnsrsbh="110101201707010057";
     String newJsbh = "110101201707010057~~499000152456";
@@ -97,8 +97,9 @@ public class MakeInvoiceScenario {
     public void disCount() throws Exception {
         String fileDis = "discount.xml";
         String file = filePath + fileDis;
+        new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -111,21 +112,21 @@ public class MakeInvoiceScenario {
     public void rateIsNotExist() throws Exception {
         UpdateGroup.updateGroup(file,"","","21.96","0.19","4.17");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.TEST);
+        int code = mi.makeInvoice(file,InterfaceName.PRO);
         Assert.assertEquals(code,99);
     }
 
     @Test(groups = {"自助开票"})
     public void ziZhuInvoice() throws Exception {
         //总部：110101201707010043~~A20016420000265   110101201707010057~~499000152456  110101201707010037~~499000152093
-        // 许继或者广东：554433221100001~~499111004288
+        // 许继或者广东：554433221100001~~499111004288   500102010000096~~539900210221  500102010000097~~539900210230
         //宁波：500102010001459  500102010001459~~499000115698
         //四川：500102010003543~~500102010003543
-        String newShnsrsbh="500102010003543";
-        String newJsbh = "500102010003543~~500102010003543";
+        String newShnsrsbh="110101201707010057";
+        String newJsbh = "110101201707010057~~499000152456";
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
-        int code = mi.makeInvoice(file,InterfaceName.DEV);
+        int code = mi.makeInvoice(file,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -151,7 +152,7 @@ public class MakeInvoiceScenario {
     public void makeJuanInvoice() throws Exception {
         String fileName = "juanpiao.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -171,7 +172,7 @@ public class MakeInvoiceScenario {
     public void makePuInvoice() throws Exception {
         String fileName = "zengpu.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
+        new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
     }
 
     /**
@@ -269,7 +270,7 @@ public class MakeInvoiceScenario {
     public void discountZhuanInvoice() throws Exception {
         String fileName = "discountZhuanPiao.xml";
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
     @Test

@@ -21,13 +21,13 @@ public class ZhuanPiaoHongChong {
     @Test
     public void hzxxbsc() throws Exception {
         String fileName = "hzxxbsc.xml";
-        new RequestInterface().requestInterface(filePath+fileName,InterfaceName.TEST);
+        new RequestInterface().requestInterface(filePath+fileName,InterfaceName.PRO);
     }
 
     @Test
     public void zhuanPiaoHongChong() throws Exception {
         String fileName = "fushuzhuanpiao.xml";
-        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.TEST);
+        int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -41,7 +41,7 @@ public class ZhuanPiaoHongChong {
     @Test
     public void hsxxbxz() throws Exception {
         String fileName = "hsxxbxz.xml";
-        new RequestInterface().requestInterface(filePath+fileName, InterfaceName.TEST);
+        new RequestInterface().requestInterface(filePath+fileName, InterfaceName.PRO);
     }
 
 

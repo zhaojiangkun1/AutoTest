@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>10820190917150430</fpqqlsh>
+            <fpqqlsh>220191014150305</fpqqlsh>
             <shnsrsbh>110101201707010057</shnsrsbh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>91310114MA1GU3NU72</ghdwsbh>
-            <ghdwmc>上海融族网络科技有限公司</ghdwmc>
-            <ghdwdzdh>上海市浦东新区康威路1500号3幢1层103室02158958286</ghdwdzdh>
-            <ghdwyhzh>中国建设银行股份有限公司上海张江支行31050161393600001918</ghdwyhzh>
+            <ghdwsbh>913205005794527505</ghdwsbh>
+            <ghdwmc>苏州吴江同里湖旅游度假村股份有限公司</ghdwmc>
+            <ghdwdzdh>苏州市吴江区同里镇环湖西路88号 0512-63330888</ghdwdzdh>
+            <ghdwyhzh>中国农业银行吴江同里支行 10-543301040007649</ghdwyhzh>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>技术服务费</spmc>
-                    <ggxh>W6900</ggxh>
-                    <dw>套</dw>
+                    <spmc>服务费</spmc>
+                    <ggxh/>
+                    <dw/>
                     <spsl>1</spsl>
                     <dj>86</dj>
                     <je>86</je>
@@ -29,8 +29,8 @@
                     <zzstsgl/>
                 </group>
             </fyxm>
+            <extParam>storeId=1000001,operatorId=1007045</extParam>
             <bz/>
-            <extParam>storeId=1001991,operatorId=1000332</extParam>
             <skr/>
             <fhr/>
             <kpr>管理员</kpr>

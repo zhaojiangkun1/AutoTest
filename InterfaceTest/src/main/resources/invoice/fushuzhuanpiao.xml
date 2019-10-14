@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>98820190830175326</fpqqlsh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>37220191009144504</fpqqlsh>
+            <jsbh>91320191MA1ML4CL25~~661921253676</jsbh>
             <fplxdm>004</fplxdm>
             <kplx>1</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>91320191MA1ML4CL25</ghdwsbh>
-            <ghdwmc>南京数族信息</ghdwmc>
-            <ghdwdzdh>南京市江北新区新科二路2号南大软件学院222D室02558801191</ghdwdzdh>
-            <ghdwyhzh>中国农业银行股份有限公司南京茶亭东街支行10107501040008319</ghdwyhzh>
+            <ghdwsbh>91320191MA1PB97F3A</ghdwsbh>
+            <ghdwmc>南京优悦臻鲜信息科技有限公司</ghdwmc>
+            <ghdwdzdh>南京市高新开发区星火路11号动漫大厦B座2层18号</ghdwdzdh>
+            <ghdwyhzh>招商银行股份有限公司南京城东支行125908266310201</ghdwyhzh>
             <qdbz>0</qdbz>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>代收民航发展基金</spmc>
+                    <spmc>茶叶</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
-                    <spsl/>
-                    <dj/>
-                    <je>-2</je>
-                    <sl>0.13</sl>
-                    <se>-0.26</se>
-                    <spbm>6130000000000000000</spbm>
+                    <spsl>-1</spsl>
+                    <dj>485.44</dj>
+                    <je>-485.44</je>
+                    <sl>0.03</sl>
+                    <se>-14.56</se>
+                    <spbm>1010116010000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -31,12 +31,12 @@
                 </group>
             </fyxm>
             <bz/>
-            <skr/>
-            <fhr/>
-            <kpr>admin</kpr>
-            <tzdbh>5001021908000466</tzdbh>
-            <yfpdm>1500000002</yfpdm>
-            <yfphm>32225150</yfphm>
+            <skr>管理员</skr>
+            <fhr>管理员</fhr>
+            <kpr>管理员</kpr>
+            <tzdbh>3201121910002248</tzdbh>
+            <yfpdm>3200191130</yfpdm>
+            <yfphm>44738275</yfphm>
             <sprsjh/>
         </input>
     </body>

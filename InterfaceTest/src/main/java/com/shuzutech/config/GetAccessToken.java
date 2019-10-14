@@ -22,15 +22,12 @@ import java.util.*;
 
 public class GetAccessToken {
 
-    private static String current_time = ConfigFile.sd.format(new Date());
-
-
     @Test
     public static String getAccessToken(InterfaceName name) throws IOException {
 
-        String appid = ConfigFile.getAppid(name);
-        String appSecret = ConfigFile.getAppSecret(name);
-        String getUrl = ConfigFile.getUrl(name);
+        String appid = GetAppInfo.getAppInfo(name).getAppId();
+        String appSecret = GetAppInfo.getAppInfo(name).getAppSecret();
+        String getUrl = GetAppInfo.getAppInfo(name).getAddress();
 
         //封装请求参数
         List<BasicNameValuePair> list = new ArrayList<>();
@@ -61,73 +58,27 @@ public class GetAccessToken {
     }
 
     @Test
-    public static String getToken(InterfaceName name) throws Exception {
-
-        String access_token;
-        SaveToken saveToken = judgeToeknEnv(name);
-
-        Date old_time = saveToken.getCurrentTime();
-
-        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date endTime = sdf.parse(current_time);
-        //计算前后时间差，单位是秒
-        long diffSec = (endTime.getTime() - old_time.getTime())/1000;
-        System.out.println("之前的时间:"+old_time);
-        System.out.println("当前的时间:"+endTime);
-        System.out.println("前后时间差："+diffSec);
-
-
-        if(diffSec > 7200){
-            access_token = GetAccessToken.getAccessToken(name);
-            updateToken(name,endTime,access_token);
+    public static String getToken(InterfaceName num) throws Exception {
+        String access_toekn="";
+        AppInfo appInfo = GetAppInfo.getAppInfo(num);
+        Date updateTime = appInfo.getUpdateTime();
+        System.out.println("之前的时间："+updateTime);
+        Date current_Time = new Date();
+        System.out.println("当前的时间:"+current_Time);
+        long diffSec = (current_Time.getTime()-updateTime.getTime())/1000;
+        System.out.println("时间差："+diffSec);
+        if (diffSec > 7200){
+            access_toekn = getAccessToken(num);
+            appInfo.setAccessToken(access_toekn);
+            appInfo.setUpdateTime(current_Time);
+            GetAppInfo.updateAppInfo(num,appInfo);
         }else {
-            String old_AccessToken = saveToken.getAccessToken();
-            access_token = old_AccessToken;
+            access_toekn = GetAppInfo.getAppInfo(num).getAccessToken();
         }
-
-        return access_token;
+        return access_toekn;
     }
 
-    public static SaveToken judgeToeknEnv(InterfaceName name) throws IOException {
-        SqlSession session = DataBaseUtil.getSqlSession();
-        SaveToken saveToken = null;
-        if (name == InterfaceName.TEST){
-            saveToken = session.selectOne("getToken",3);
-        }
-        if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
-            saveToken = session.selectOne("getToken",1);
-        }
-        if (name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
-            saveToken = session.selectOne("getToken",2);
-        }
-        if (name == InterfaceName.SHANGHUTEST){
-            saveToken = session.selectOne("getToken",3);
-        }
 
-        return saveToken;
-    }
-
-    public static void updateToken(InterfaceName name,Date endTime,String newAccessToken) throws IOException {
-        SqlSession session = DataBaseUtil.getSqlSession();
-        SaveToken st = new SaveToken();
-        st.setCurrentTime(endTime);
-        st.setAccessToken(newAccessToken);
-        if (name == InterfaceName.SHANGHUPRO || name == InterfaceName.PRO){
-            st.setId(1);
-            session.update("updateToken",st);
-        }
-        if (name == InterfaceName.TEST || name == InterfaceName.SHANGHUTEST){
-            st.setId(3);
-            session.update("updateToken",st);
-        }
-        if (name == InterfaceName.DEV || name == InterfaceName.SHANGHUDEV){
-            st.setId(2);
-            session.update("updateToken",st);
-        }
-
-        session.commit();
-
-    }
 
 
 }

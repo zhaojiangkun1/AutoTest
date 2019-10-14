@@ -7,16 +7,20 @@
         select * from saveToken
         where id = #{id};
     </select>
-    
-    <update id="updateToken" parameterType="com.shuzutech.config.SaveToken">
-        update saveToken set currentTime = #{currentTime},
-        accessToken = #{accessToken} where id = #{id};
+
+    <select id="getAppInfo" parameterType="Integer" resultType="com.shuzutech.config.AppInfo">
+        select * from appinfo where id=#{id};
+    </select>
+
+    <update id="updateAppInfo" parameterType="com.shuzutech.config.AppInfo">
+        update appinfo set accessToken = #{accessToken},updateTime=#{updateTime} where id=#{id};
     </update>
+
     <select id="queryfpinfo" parameterType="Integer" resultType="com.shuzutech.config.SaveFpInfo">
         select * from savefpinfo order by id desc limit 1;
     </select>
     <insert id="insertFpInfo" parameterType="com.shuzutech.config.SaveFpInfo">
-        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updateTime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime})
+        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updateTime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime});
     </insert>
 
 </mapper>

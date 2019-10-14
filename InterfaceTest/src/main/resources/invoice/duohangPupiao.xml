@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>29820190911112726</fpqqlsh>
-            <jsbh>500102010001459~~499000115698</jsbh>
+            <fpqqlsh>93920190918154229</fpqqlsh>
+            <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -14,16 +14,16 @@
             <fyxm count="10">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>兰博基尼跑车</spmc>
+                    <spmc>餐饮费用</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
                     <spsl>1</spsl>
-                    <dj>13560</dj>
-                    <je>13560</je>
-                    <sl>0.13</sl>
-                    <se>1762.8</se>
-                    <spbm>1090305010800000000</spbm>
+                    <dj>1</dj>
+                    <je>1</je>
+                    <sl>0.06</sl>
+                    <se>0.06</se>
+                    <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -183,10 +183,10 @@
                     <zzstsgl/>
                 </group>
             </fyxm>
-            <bz>备注</bz>
-            <skr>收款人</skr>
-            <fhr>复核人</fhr>
-            <kpr>开票人</kpr>
+            <bz/>
+            <skr>admin1</skr>
+            <fhr>admin2</fhr>
+            <kpr>admin3</kpr>
             <yfpdm/>
             <yfphm/>
             <sprsjh>zhaokun@shuzutech.com</sprsjh>

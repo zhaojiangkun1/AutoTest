@@ -2,59 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55482014-9bc1-4d70-9cb1-0aa7d3161379" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetSaveFpInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/AppInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAppInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/cxsbxx.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveFpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveFpInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ConfigFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveToken.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/UpdateFpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/UpdateFpInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/CXSBZT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/GoodsEncodingOperator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/QuerySsbmqq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/TerminalQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/h5Invoice/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/h5Invoice/Encrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceInvalid/InvalidInvoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceQuery/InvoicePrintingQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceQuery/InvoiceQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceQuery/InvoiceResultNotice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceStatistical/DQFPXX.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceStatistical/QueryInvoiceStatistical.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceTitle/BuQuanTaiTouAuth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/ZhuanPiaoHongChong.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/ZhuanPiaoHongChong.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/FpdyDataRequestInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/SmartPrint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/zpyttlx/InvoiceTtitleInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/cxsbzt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/defaultencodingsetting.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/ecodingdelete.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/encodingsetting.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getSjbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getgoodslist.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getspbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/queryspbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/terminalQuery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invalidInvoice/invalidInvoice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discount.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discountZhuanPiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discountZhuanPiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/duohangPupiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/duohangPupiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushuzhuanpiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushuzhuanpiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hsxxbxz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hsxxbxz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hzxxbsc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hzxxbsc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/juanpiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/juanpiao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxjuanpiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxjuanpiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxzengpu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxzengpu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/pupiaochonghong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/pupiaochonghong.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/InvoicePrintingQuery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/fpdzcx.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/invoiceResultNotice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/query.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/QueryInvoiceStatistics.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/queryInvoice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/statisticalInvoice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/weikaipiaonumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceTitle/buquantaitou.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/smartprint/printquery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/smartprint/smartprint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/zpyttlx/aicode.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/src/main/resources/zpyttlx/invoiceTitleQuery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/MakeInvoiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/MakeInvoiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/FPDYDATA/fpdydata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/config/GetAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/config/GetAccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/config/UpdateFpInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/config/UpdateFpInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/enterpriseInformation/Enterprise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/goodsEncoding/CXSBZT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/goodsEncoding/GoodsEncodingOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/goodsEncoding/QuerySsbmqq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/goodsEncoding/TerminalQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/h5Invoice/Encrypt.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/h5Invoice/Encrypt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/MakeInvoiceScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/MakeInvoiceScenario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/ZhuanPiaoHongChong.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoice/ZhuanPiaoHongChong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceInvalid/InvalidInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceQuery/InvoicePrintingQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceQuery/InvoiceQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceQuery/InvoiceResultNotice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceStatistical/DQFPXX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceStatistical/QueryInvoiceStatistical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/invoiceTitle/BuQuanTaiTouAuth.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/ningbo/NbInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/ningbo/NbInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/smartPrint/FpdyDataRequestInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/smartPrint/SmartPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/com/shuzutech/zpyttlx/InvoiceTtitleInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/enterpriseInformation/enterpriseQuery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/enterpriseInformation/enterpriseSetting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/cxsbzt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/defaultencodingsetting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/ecodingdelete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/encodingsetting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/getSjbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/getgoodslist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/getspbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/queryspbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/goodsEncoding/terminalQuery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invalidInvoice/invalidInvoice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/discount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/discount.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/discountZhuanPiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/discountZhuanPiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/duohangPupiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/duohangPupiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/fushuzhuanpiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/fushuzhuanpiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/hsxxbxz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/hsxxbxz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/hzxxbsc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/hzxxbsc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/juanpiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/juanpiao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/makeInvoice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/makeInvoice.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/maxzengpu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/maxzengpu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/pupiaochonghong.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/pupiaochonghong.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zengpu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zengpu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zengzhuan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zengzhuan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zizhukaipiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/invoice/zizhukaipiao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceQuery/InvoicePrintingQuery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceQuery/fpdzcx.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceQuery/invoiceResultNotice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceQuery/query.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceStatistical/QueryInvoiceStatistics.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceStatistical/queryInvoice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceStatistical/statisticalInvoice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceStatistical/weikaipiaonumber.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/invoiceTitle/buquantaitou.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InterfaceTest/target/classes/mapper/SQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/ningbo/fpsytj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/smartprint/printquery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/smartprint/smartprint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/zpyttlx/aicode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceTest/target/classes/zpyttlx/invoiceTitleQuery.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,50 +108,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ReadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="122" column="45" lean-forward="true" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+            <state relative-caret-position="409">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/InterfaceName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetSaveFpInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="49" />
               <folding>
-                <element signature="method#qdbzDianPiao#0;class#MakeInvoiceScenario#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ConfigFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAppInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/config/application.properties">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="57">
+              <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/enterpriseInformation/Enterprise.java">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ExtentTestNGIReporterListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/enterpriseInformation/enterpriseSetting.xml">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/DataBaseUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="76">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/enterpriseInformation/enterpriseQuery.xml">
+        <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/AppInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="114">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +222,7 @@
       <find>卷票</find>
       <find>warnings</find>
       <find>WarningString</find>
+      <find>99</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,17 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SmsInterfaceTest/src/main/java/com/shuzutech/cases/SendSms.java" />
-        <option value="D:/工作内容/开票接口更新文档/demo.php" />
-        <option value="D:/工作内容/开票接口更新文档/phpdemo/demo.php" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/FpdyDataRequestInterface.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/h5Invoice/Encrypt.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/TerminalQuery.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/CXSBZT.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/cxsbzt.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/RequestInterface.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceQuery/InvoiceQuery.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/fpdzcx.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/weikaipiaonumber.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/QueryInvoiceStatistics.xml" />
@@ -164,11 +240,9 @@
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceQuery/query.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/fpsytj.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbMakeInvoice.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/cxsbxx.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceStatistical/QueryInvoiceStatistical.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getgoodslist.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/GoodsEncodingOperator.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxzengpu.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/terminalQuery.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/smartprint/smartprint.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/invoiceprint.xml" />
@@ -176,25 +250,38 @@
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invalidInvoice/invalidInvoice.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceInvalid/InvalidInvoice.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushufapiao.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/duohangPupiao.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveToken.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/UpdateGroup.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/pupiaochonghong.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/FPDYDATA/fpdydata.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/SmartPrint.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbInterface.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/config/application.properties" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveFpInfo.java" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetSaveFpInfo.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/UpdateFpInfo.java" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxjuanpiao.xml" />
-        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxzengpu.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/duohangPupiao.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discountZhuanPiao.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/cxsbxx.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/UpdateFpInfo.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discount.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/ZhuanPiaoHongChong.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/h5Invoice/Encrypt.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbInterface.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/pupiaochonghong.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hzxxbsc.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hsxxbxz.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushuzhuanpiao.xml" />
         <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveToken.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/AppInfo.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAppInfo.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ConfigFile.java" />
       </list>
     </option>
   </component>
@@ -212,7 +299,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="35" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -239,7 +327,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,7 +378,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shuzutech" type="462c0819:PsiDirectoryNode" />
-              <item name="enterpriseInformation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="InterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shuzutech" type="462c0819:PsiDirectoryNode" />
+              <item name="h5Invoice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +408,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shuzutech" type="462c0819:PsiDirectoryNode" />
-              <item name="merchants" type="462c0819:PsiDirectoryNode" />
+              <item name="ningbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -327,29 +425,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="InterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="enterpriseInformation" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568708990161" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InvoiceOperter" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571037813868" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FPKJ" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -359,10 +448,12 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/InterfaceTest/src/main/java/Md5.java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\AutoTest\SmsInterfaceTest\src\main\java\com\shuzutech\cases" />
-      <recent name="D:\IdeaProjects\AutoTest" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\AutoTest\SmsInterfaceTest\src\main\resources" />
+      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources\invoice" />
+      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\java\com\shuzutech\invoice" />
+      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources\config" />
+      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shuzutech.merchants" />
@@ -371,12 +462,10 @@
       <recent name="com.shuzutech.invoiceInvalid" />
       <recent name="com.shuzutech.invoiceQuery" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\AutoTest\SmsInterfaceTest\src\main\java\com\shuzutech\cases" />
+      <recent name="D:\IdeaProjects\AutoTest" />
       <recent name="D:\IdeaProjects\AutoTest\SmsInterfaceTest\src\main\resources" />
-      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources\invoice" />
-      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\java\com\shuzutech\invoice" />
-      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources\config" />
-      <recent name="D:\IdeaProjects\AutoTest\InterfaceTest\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -391,8 +480,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MakeInvoiceScenario.ziZhuInvoice">
-    <configuration name="MakeInvoiceScenario.makeDuohangJuanPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MakeInvoiceScenario.useLslbs">
+    <configuration name="MakeInvoiceScenario.rateIsNotExist" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="InterfaceTest" />
       <extension name="coverage">
         <pattern>
@@ -402,43 +491,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.shuzutech.invoice" />
       <option name="MAIN_CLASS_NAME" value="com.shuzutech.invoice.MakeInvoiceScenario" />
-      <option name="METHOD_NAME" value="makeDuohangJuanPiao" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeInvoiceScenario.makePuInvoice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InterfaceTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shuzutech.invoice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shuzutech.invoice" />
-      <option name="MAIN_CLASS_NAME" value="com.shuzutech.invoice.MakeInvoiceScenario" />
-      <option name="METHOD_NAME" value="makePuInvoice" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeInvoiceScenario.normalRate2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="InterfaceTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shuzutech.invoice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shuzutech.invoice" />
-      <option name="MAIN_CLASS_NAME" value="com.shuzutech.invoice.MakeInvoiceScenario" />
-      <option name="METHOD_NAME" value="normalRate2" />
+      <option name="METHOD_NAME" value="rateIsNotExist" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -482,20 +535,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZhuanPiaoHongChong.hsxxbxz" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InterfaceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shuzutech.invoice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shuzutech.invoice" />
+      <option name="MAIN_CLASS_NAME" value="com.shuzutech.invoice.ZhuanPiaoHongChong" />
+      <option name="METHOD_NAME" value="hsxxbxz" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZhuanPiaoHongChong.zhuanPiaoHongChong" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="InterfaceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shuzutech.invoice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shuzutech.invoice" />
+      <option name="MAIN_CLASS_NAME" value="com.shuzutech.invoice.ZhuanPiaoHongChong" />
+      <option name="METHOD_NAME" value="zhuanPiaoHongChong" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.MakeInvoiceScenario.normalRate2" />
-      <item itemvalue="TestNG.MakeInvoiceScenario.makePuInvoice" />
-      <item itemvalue="TestNG.MakeInvoiceScenario.ziZhuInvoice" />
-      <item itemvalue="TestNG.MakeInvoiceScenario.makeDuohangJuanPiao" />
       <item itemvalue="TestNG.MakeInvoiceScenario.useLslbs" />
+      <item itemvalue="TestNG.ZhuanPiaoHongChong.hsxxbxz" />
+      <item itemvalue="TestNG.ZhuanPiaoHongChong.zhuanPiaoHongChong" />
+      <item itemvalue="TestNG.MakeInvoiceScenario.rateIsNotExist" />
+      <item itemvalue="TestNG.MakeInvoiceScenario.ziZhuInvoice" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MakeInvoiceScenario.ziZhuInvoice" />
         <item itemvalue="TestNG.MakeInvoiceScenario.useLslbs" />
-        <item itemvalue="TestNG.MakeInvoiceScenario.makeDuohangJuanPiao" />
-        <item itemvalue="TestNG.MakeInvoiceScenario.makePuInvoice" />
-        <item itemvalue="TestNG.MakeInvoiceScenario.normalRate2" />
+        <item itemvalue="TestNG.MakeInvoiceScenario.ziZhuInvoice" />
+        <item itemvalue="TestNG.MakeInvoiceScenario.rateIsNotExist" />
+        <item itemvalue="TestNG.ZhuanPiaoHongChong.zhuanPiaoHongChong" />
+        <item itemvalue="TestNG.ZhuanPiaoHongChong.hsxxbxz" />
       </list>
     </recent_temporary>
   </component>
@@ -605,44 +694,67 @@
       <workItem from="1568168251006" duration="20679000" />
       <workItem from="1568252018622" duration="11907000" />
       <workItem from="1568599008172" duration="22189000" />
-      <workItem from="1568683445809" duration="15373000" />
+      <workItem from="1568683445809" duration="19775000" />
+      <workItem from="1568773308899" duration="2592000" />
+      <workItem from="1568783663361" duration="2956000" />
+      <workItem from="1568789111249" duration="7101000" />
+      <workItem from="1568857079775" duration="17774000" />
+      <workItem from="1568948946993" duration="7203000" />
+      <workItem from="1568974205783" duration="766000" />
+      <workItem from="1569029814099" duration="1286000" />
+      <workItem from="1569202476042" duration="13445000" />
+      <workItem from="1569288933126" duration="6771000" />
+      <workItem from="1569374897318" duration="7090000" />
+      <workItem from="1569462264329" duration="10620000" />
+      <workItem from="1569492851041" duration="828000" />
+      <workItem from="1569548682718" duration="6883000" />
+      <workItem from="1569738914854" duration="4814000" />
+      <workItem from="1569827998789" duration="518000" />
+      <workItem from="1570524859653" duration="223000" />
+      <workItem from="1570587121850" duration="2701000" />
+      <workItem from="1570591578231" duration="10554000" />
+      <workItem from="1570677620302" duration="10527000" />
+      <workItem from="1570757808032" duration="2622000" />
+      <workItem from="1570776264718" duration="4670000" />
+      <workItem from="1570845549742" duration="9327000" />
+      <workItem from="1571019795294" duration="5219000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MakeInvoiceScenario_normalRate2 - 2019.09.17 at 14h 41m 12s.xml">
-      <configuration name="MakeInvoiceScenario.normalRate2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_normalRate2 - 2019.09.17 at 14h 41m 37s.xml">
-      <configuration name="MakeInvoiceScenario.normalRate2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_normalRate2 - 2019.09.17 at 14h 45m 47s.xml">
-      <configuration name="MakeInvoiceScenario.normalRate2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_makePuInvoice - 2019.09.17 at 14h 48m 23s.xml">
-      <configuration name="MakeInvoiceScenario.makePuInvoice" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_ziZhuInvoice - 2019.09.17 at 14h 50m 09s.xml">
-      <configuration name="MakeInvoiceScenario.ziZhuInvoice" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_makeDuohangJuanPiao - 2019.09.17 at 14h 54m 05s.xml">
-      <configuration name="MakeInvoiceScenario.makeDuohangJuanPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_makeDuohangJuanPiao - 2019.09.17 at 14h 58m 28s.xml">
-      <configuration name="MakeInvoiceScenario.makeDuohangJuanPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_makeDuohangJuanPiao - 2019.09.17 at 15h 02m 08s.xml">
-      <configuration name="MakeInvoiceScenario.makeDuohangJuanPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.09.17 at 15h 04m 36s.xml">
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 10h 25m 11s.xml">
       <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeInvoiceScenario_ziZhuInvoice - 2019.09.17 at 16h 12m 29s.xml">
-      <configuration name="MakeInvoiceScenario.ziZhuInvoice" configurationId="TestNG" />
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 10h 25m 50s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 11h 01m 08s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 11h 02m 16s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 11h 03m 27s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 11h 21m 56s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 11h 22m 24s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 15h 02m 45s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 15h 03m 08s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MakeInvoiceScenario_useLslbs - 2019.10.14 at 15h 03m 23s.xml">
+      <configuration name="MakeInvoiceScenario.useLslbs" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="957778000" />
+    <option name="totallyTimeSpent" value="1098670000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -656,8 +768,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.27882037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.25603217" />
       <window_info id="Structure" order="1" sideWeight="0.5014749" side_tool="true" weight="0.30428955" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -666,14 +779,14 @@
       <window_info id="Favorites" order="6" sideWeight="0.5027027" side_tool="true" weight="0.30428955" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4496454" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.28368795" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3744681" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.51914895" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4539007" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.14893617" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.5148936" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44113475" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -724,340 +837,316 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceInvalid/InvalidInvoice.java">
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/CXSBZT.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/enterpriseInformation/Enterprise.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/zpyttlx/InvoiceTtitleInterface.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/zpyttlx/invoiceTitleQuery.xml" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/enterpriseInformation/enterpriseSetting.xml" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/FpdyDataRequestInterface.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/SmartPrint.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceTitle/BuQuanTaiTouAuth.java" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/fpsytj.xml" />
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/duohangPupiao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="26" column="96" selection-start-line="26" selection-start-column="96" selection-end-line="26" selection-end-column="96" />
+        <state relative-caret-position="114">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discountZhuanPiao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxzengpu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/ningbo/cxsbxx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/UpdateInvoiceBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/discount.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushufapiao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/pupiaochonghong.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceStatistical/QueryInvoiceStatistical.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceStatistical/DQFPXX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/TerminalQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/FPDYDATA/fpdydata.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/smartprint/printquery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/smartprint/smartprint.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbMakeInvoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="665">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/ningbo/NbInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="76" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="76" />
+        <state relative-caret-position="102">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java">
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/h5Invoice/Encrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="163" column="9" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/Md5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="46" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/ZhuanPiaoHongChong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/fushuzhuanpiao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hsxxbxz.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/hzxxbsc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengzhuan.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/merchants/MerchantInformationPush.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/juanpiao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="218" column="22" lean-forward="true" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/merchants/MerchantPush.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/databaseConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="method#qdbzDianPiao#0;class#MakeInvoiceScenario#0" />
+            <element signature="method#discountZhuanInvoice#0;class#MakeInvoiceScenario#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/UpdateFpInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/mapper/SQLMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetSaveFpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="409">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/SaveFpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zengpu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="41" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/zizhukaipiao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/maxjuanpiao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="140" column="56" selection-start-line="140" selection-start-column="56" selection-end-line="140" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoice/makeInvoice.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/GoodsEncodingOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/terminalQuery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/queryspbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getSjbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getspbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/getgoodslist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/encodingsetting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/ecodingdelete.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/defaultencodingsetting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/goodsEncoding/cxsbzt.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/zpyttlx/aicode.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/merchants/shanghuInfoQuery.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/merchants/MerchantInformationPush.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/merchants/MerchantPush.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/statisticalInvoice.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/weikaipiaonumber.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceTitle/buquantaitou.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/queryInvoice.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/invoiceStatistical/QueryInvoiceStatistics.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/enterpriseInformation/enterpriseQuery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/QuerySsbmqq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/goodsEncoding/CXSBZT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/enterpriseInformation/Enterprise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/zpyttlx/InvoiceTtitleInterface.java">
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/RequestInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/InterfaceName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/AppInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/zpyttlx/invoiceTitleQuery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/enterpriseInformation/enterpriseSetting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/FpdyDataRequestInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/smartPrint/SmartPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoiceTitle/BuQuanTaiTouAuth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="122" column="45" lean-forward="true" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
-            <element signature="method#qdbzDianPiao#0;class#MakeInvoiceScenario#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/DataBaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetAppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/GetSaveFpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/invoice/MakeInvoiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfaceTest/src/main/java/com/shuzutech/config/ConfigFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
         </state>
       </provider>
     </entry>

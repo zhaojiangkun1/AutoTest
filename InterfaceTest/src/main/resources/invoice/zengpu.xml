@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>31720190917144819</fpqqlsh>
-            <jsbh>110101201707010057~~499000152456</jsbh>
+            <fpqqlsh>37920190927161414</fpqqlsh>
+            <jsbh>91320191MA1ML4CL25~~661826092245</jsbh>
             <fplxdm>007</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
@@ -30,7 +30,7 @@
                     <zzstsgl/>
                 </group>
             </fyxm>
-            <extParam>storeId=1001682,operatorId=1000214</extParam>
+            <extParam/>
             <bz/>
             <skr/>
             <fhr/>

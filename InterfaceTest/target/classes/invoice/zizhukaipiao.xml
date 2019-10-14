@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>58820190917145007</fpqqlsh>
+            <fpqqlsh>68120191012151219</fpqqlsh>
             <shnsrsbh>110101201707010057</shnsrsbh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
@@ -16,15 +16,15 @@
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>智能销售点终端</spmc>
-                    <ggxh>W6900</ggxh>
-                    <dw>套</dw>
+                    <spmc>餐饮费用</spmc>
+                    <ggxh/>
+                    <dw/>
                     <spsl>1</spsl>
-                    <dj>618.58407071</dj>
-                    <je>618.58</je>
-                    <sl>0.13</sl>
-                    <se>80.42</se>
-                    <spbm>1090505010000000000</spbm>
+                    <dj>6</dj>
+                    <je>6</je>
+                    <sl>0.06</sl>
+                    <se>0.36</se>
+                    <spbm>3070401000000000000</spbm>
                     <zxbm/>
                     <yhzcbs>0</yhzcbs>
                     <lslbs/>
@@ -32,8 +32,6 @@
                 </group>
             </fyxm>
             <bz/>
-            <extParam>storeId=1001682,operatorId=1000214</extParam>
-            <title_type/>
             <skr>管理员</skr>
             <fhr>管理员</fhr>
             <kpr>管理员</kpr>

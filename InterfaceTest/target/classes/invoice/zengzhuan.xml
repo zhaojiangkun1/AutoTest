@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>98620190916171214</fpqqlsh>
-            <jsbh>91320191MA1ML4CL25~~661826092245</jsbh>
+            <fpqqlsh>29920191009115217</fpqqlsh>
+            <jsbh>91320191MA1ML4CL25~~661921253676</jsbh>
             <fplxdm>004</fplxdm>
             <kplx>0</kplx>
             <yhlx>0</yhlx>
-            <ghdwsbh>9111010879851136XP</ghdwsbh>
-            <ghdwmc>北京百旺金赋科技有限公司</ghdwmc>
-            <ghdwdzdh>北京市海淀区丰秀中路3号院12号楼3层101-3 010-52279599</ghdwdzdh>
-            <ghdwyhzh>工行北京知春路支行0200207909200025979</ghdwyhzh>
+            <ghdwsbh>91320191MA1PB97F3A</ghdwsbh>
+            <ghdwmc>南京优悦臻鲜信息科技有限公司</ghdwmc>
+            <ghdwdzdh>南京市高新开发区星火路11号动漫大厦B座2层18号</ghdwdzdh>
+            <ghdwyhzh>招商银行股份有限公司南京城东支行125908266310201</ghdwyhzh>
             <qdbz>0</qdbz>
             <fyxm count="1">
                 <group xh="1">
                     <fphxz>0</fphxz>
-                    <spmc>技术服务费</spmc>
+                    <spmc>茶叶</spmc>
                     <spsm/>
                     <ggxh/>
                     <dw/>
                     <spsl>1</spsl>
-                    <dj>94339.622641509</dj>
-                    <je>94339.62</je>
-                    <sl>0.06</sl>
-                    <se>5660.38</se>
-                    <spbm>3040205000000000000</spbm>
-                    <zxbm/>&gt;
-                    <yhzcbs/>
+                    <dj>485.44</dj>
+                    <je>485.44</je>
+                    <sl>0.03</sl>
+                    <se>14.56</se>
+                    <spbm>1010116010000000000</spbm>
+                    <zxbm/>
+                    <yhzcbs>0</yhzcbs>
                     <lslbs/>
                     <zzstsgl/>
                 </group>
