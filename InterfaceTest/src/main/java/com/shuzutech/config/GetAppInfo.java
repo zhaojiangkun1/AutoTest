@@ -18,6 +18,9 @@ public class GetAppInfo {
         if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
             appInfo = session.selectOne("getAppInfo",1);
         }
+        if (name == InterfaceName.DEV1){
+            appInfo = session.selectOne("getAppInfo",6);
+        }
         return appInfo;
     }
 
@@ -33,6 +36,10 @@ public class GetAppInfo {
         }
         if (name == InterfaceName.PRO || name == InterfaceName.SHANGHUPRO){
             appInfo.setId(1);
+            session.update("updateAppInfo",appInfo);
+        }
+        if (name == InterfaceName.DEV1){
+            appInfo.setId(6);
             session.update("updateAppInfo",appInfo);
         }
         session.commit();

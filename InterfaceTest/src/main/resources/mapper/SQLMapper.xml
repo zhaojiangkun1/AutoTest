@@ -3,10 +3,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="获取AccessToken信息">
-    <select id="getToken" parameterType="Integer" resultType="com.shuzutech.config.SaveToken">
-        select * from saveToken
-        where id = #{id};
-    </select>
 
     <select id="getAppInfo" parameterType="Integer" resultType="com.shuzutech.config.AppInfo">
         select * from appinfo where id=#{id};

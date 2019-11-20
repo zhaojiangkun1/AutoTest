@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><business id="FPKJ">
     <body>
         <input>
-            <fpqqlsh>68120191012151219</fpqqlsh>
+            <fpqqlsh>46820191029151805</fpqqlsh>
             <shnsrsbh>110101201707010057</shnsrsbh>
             <jsbh>110101201707010057~~499000152456</jsbh>
             <fplxdm>026</fplxdm>
@@ -32,12 +32,14 @@
                 </group>
             </fyxm>
             <bz/>
+            <title_type>3</title_type>
+            <readonly>1</readonly>
             <skr>管理员</skr>
             <fhr>管理员</fhr>
             <kpr>管理员</kpr>
             <yfpdm/>
             <yfphm/>
-            <sprsjh/>
+            <sprsjh>1</sprsjh>
         </input>
     </body>
 </business>

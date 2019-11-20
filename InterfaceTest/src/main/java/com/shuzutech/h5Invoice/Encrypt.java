@@ -2,6 +2,7 @@ package com.shuzutech.h5Invoice;
 
 import com.shuzutech.config.ConfigFile;
 import com.shuzutech.config.GetAccessToken;
+import com.shuzutech.config.GetAppInfo;
 import com.shuzutech.config.InterfaceName;
 import org.apache.commons.codec.binary.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
@@ -307,6 +308,23 @@ public class Encrypt {
     }
 
     @Test
+    public void dmpZhengXin() throws Exception {
+        String param = "nsrsbh=110101201707010057&channelId=40&logo=http://www.shuzutech.com/app/img/logo.png";
+        String appId = GetAppInfo.getAppInfo(InterfaceName.PRO).getAppId();
+        String accessToken = GetAccessToken.getToken(InterfaceName.PRO);
+        String encryptMsg = java.util.Base64.getEncoder().encodeToString(new Encrypt().aesEncrypt(param,accessToken).getBytes("utf-8"));
+        //正式环境
+        String uri = "https://paymgmt.shuzutech.com/credit/merchant/information?appId="+appId+"&encryptMsg="+encryptMsg;
+        //测试环境
+//        String uri = "http://106.14.193.154:8081/credit/merchant/information?appId="+appId+"&encryptMsg="+encryptMsg;
+        String returnUri = "&returnURL=http://www.shuzutech.com/";
+        String url = uri + returnUri;
+        System.out.println(url);
+    }
+
+
+
+    @Test
     public void invoiceInto() throws Exception {
         /**
          * staffMobile 数族平台的业务员手机号
@@ -347,4 +365,7 @@ public class Encrypt {
         String url = uri + ecoderResult +returnUri;
         System.out.println(url);
     }
+
+
+
 }

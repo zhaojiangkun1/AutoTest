@@ -30,7 +30,7 @@ public class MakeInvoiceScenario {
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         UpdateGroup.updateGroup(file,"1","86","86","0","0");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file, InterfaceName.DEV);
+        int code = mi.makeInvoice(file, InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }
 
@@ -71,7 +71,7 @@ public class MakeInvoiceScenario {
         UpdateGroup.updateGroup(file,"1","618.58407071","618.58","0.13","80.42");
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
-        int code = mi.makeInvoice(file,InterfaceName.PRO);
+        int code = mi.makeInvoice(file,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -126,7 +126,7 @@ public class MakeInvoiceScenario {
         String newJsbh = "110101201707010057~~499000152456";
         String file = "D:\\IdeaProjects\\AutoTest\\InterfaceTest\\src\\main\\resources\\invoice\\zizhukaipiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(file,newShnsrsbh,newJsbh);
-        int code = mi.makeInvoice(file,InterfaceName.PRO);
+        int code = mi.makeInvoice(file,InterfaceName.DEV);
         Assert.assertEquals(code,0);
     }
 
@@ -139,7 +139,7 @@ public class MakeInvoiceScenario {
     public void makeFuShuInvoice() throws Exception {
         String fileName = "fushufapiao.xml";
         new UpdateInvoiceBody().updateMerchantsInfo(filePath+fileName,newShnsrsbh,newJsbh);
-//        UpdateGroup.updateGroup(filePath+fileName,"-1","86","-86","0","0");
+        UpdateGroup.updateGroup(filePath+fileName,"-1","86","-86","0","0");
         int code = new MakeInvoiceInterface().makeInvoice(filePath+fileName,InterfaceName.PRO);
         Assert.assertEquals(code,0);
     }

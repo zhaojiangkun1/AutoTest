@@ -20,8 +20,8 @@ public class ZhuanPiaoHongChong {
 
     @Test
     public void hzxxbsc() throws Exception {
-        String fileName = "hzxxbsc.xml";
-        new RequestInterface().requestInterface(filePath+fileName,InterfaceName.PRO);
+        String fileName = "hzxxbsc2.xml";
+        new RequestInterface().requestInterface(filePath+fileName,InterfaceName.DEV);
     }
 
     @Test
